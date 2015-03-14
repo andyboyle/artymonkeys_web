@@ -16,7 +16,7 @@ body {
 }
 
 p {
-    color: #140676;
+    color: #47a935;
     font-weight: bolder;
 }
 .ic {border:30;float:right;background:#ddd;color:#f00;width:50%;line-height:10px;font-size:10px;margin:0 10000% 0 0;overflow:hidden;padding:0}
@@ -34,8 +34,8 @@ a:hover {text-decoration:none;}
 .link-2:hover {color:#b30800;}
 
 .clr-1 { color:#0072ff;}
-.clr-2 { color:#467e23;}
-.clr-3 { color:#ecda00;}
+.clr-2 { color:#47a935;}
+.clr-3 { color:#d9a220;}
 .clr-4 { color:#b30800;}
 .clr-5 { color:#a400b3;}
 .clr-6 { color:#000;}
@@ -45,7 +45,8 @@ a:hover {text-decoration:none;}
 .text-2 {font-size:16px; line-height:25px; color:#000; font-style:italic;}
 
 h2 { font-size:40px; line-height:50px; color:#63d; font-weight:bold; font-family: 'Cabin Sketch', cursive; letter-spacing:-1px;}
-h3 { margin:0px 0px 0px 0px; font-size:20px; line-height:30px; color:#0072ff; font-family: 'Purisa,arial';}
+h3 { margin:0px 0px 0px 0px; font-size:20px; line-height:30px; color:#0072ff;
+    font-family: 'Purisa,arial', serif;}
 /** andy color 6a2 **/
 
 ul {margin:0; padding:0;list-style-image:none;}
@@ -77,14 +78,14 @@ ul.list-2 li a:hover {color:#0072ff;}
 .left-1 { margin-left:13px;}
 
 .bot-0 {padding-bottom:0 !important; margin-bottom:0 !important;}
-.bot-1 {padding-bottom:411px;}
+.bot-1 {padding-bottom:10px;}
 .bot-2 {margin-bottom:0px;}
 
 .pad-0 {padding:0px 0px 0px 0px;}
 .pad-1 {padding:10px 0px 44px 30px;}
 .pad-2 {padding:22px 0 22px 0; margin-top:24px; text-align:center; overflow:hidden;}
 .pad-3 {padding:12px 0px 27px 0px;}
-.pad-4 {padding:15px 150px 10px 30px;}
+.pad-4 {padding:10px 150px 0 30px;}
 
 .p1 {padding-bottom:22px;}
 .p2 {padding-bottom:6px;}
@@ -100,39 +101,40 @@ header {width:1000px; margin:0 auto; z-index:101; right: 0; }
 
 h1 {margin:27px 0 0 63px; display:inline-block; z-index:100;}
 
-nav { z-index:100; background:url(../images/slider-bg-half.png) 0 0 no-repeat; margin:0px 0px 0 0px; height:300px; overflow:hidden; padding:0px;}
+nav { z-index:100; background:url(../images/slider-bg-half.png) 0 0 no-repeat; margin:0 0 0 20px; height:300px; overflow:hidden; padding:0px;}
 
 ul.menu {
-    padding: 5px 10px 15px 10px;
-    margin:10px 0px 10px 0px;
+    padding: 0 5px 0 5px;
+    margin:5px 0 5px 0;
     display:inline-block;
-    background: #ededed;
+    background: #dfdfdf;
     width: 835px;
-    border-bottom: solid #cdcdcd;
-    border-right: solid #cdcdcd;
+    border: solid beige;
+    border-right-color: #cdcdcd;
+    border-bottom-color: #cdcdcd;
 }
-ul.menu li {float: left; line-height:50px; margin:0px 60px 0px 0px; }
-ul.menu li a {font-size:30px;
+ul.menu li {float: left; line-height:50px; margin:0 90px 0 0; }
+ul.menu li a {font-size:20px;
     line-height:35px;
     font-family: 'Cabin Sketch', cursive;
     text-transform:uppercase;
-    font-weight:bold;
+    font-weight:bolder;
     letter-spacing:-2px;
     display:block;
 }
 ul.menu li:hover a , ul.menu li.current a { border-bottom: 1px solid currentColor; text-decoration: none; }
 
 .registerinterestcontainer {
-    margin: 0px 10px 20px 30px;
+    margin: 20px 10px 20px 30px;
     padding: 10px 3px 10px 3px;
     width: 510px;
     height: 60px;
     background-color: #ffffff;
 }
 .inputlabel {
-    margin:  0px 5px 0px 5px;
+    margin:  0 5px 0 5px;
     float: left;
-    color: #140676;
+    color: #13610b;
     font-size: 13px;
     background-color: inherit;
 }
@@ -143,7 +145,7 @@ ul.menu li:hover a , ul.menu li.current a { border-bottom: 1px solid currentColo
     color: #040646;
     font-size: 11px;
     border: thin #6633dd;
-    background-color: #a8d8d5;
+    background-color: #47a935;
     width: 210px;
     border-radius: 7px;
 }
@@ -154,8 +156,8 @@ ul.menu li:hover a , ul.menu li.current a { border-bottom: 1px solid currentColo
     border: ridge #a8d8d5;
     font-size: 22px;
     min-font-size: 15px;
-    background-color: #a8d8d5;
-    color: #040646;
+    background-color: #47a935;
+    color: #ffffff;
     border-radius: 20px;
 }
 
@@ -163,10 +165,8 @@ ul.menu li:hover a , ul.menu li.current a { border-bottom: 1px solid currentColo
 /*********************************content*************************************/
 #content {
     width:1000px;
-    height: 800px;
     margin: auto;
     bottom: auto;
-    background: url(../images/content-img.png) repeat-y 1px 1px;
 }
 
 .art {background:url(../images/art.png) 0 0 no-repeat; width:320px; height:159px; margin:0 0 0 -30px;}
@@ -192,7 +192,7 @@ ul.menu li:hover a , ul.menu li.current a { border-bottom: 1px solid currentColo
 .box-2 { float:left; width:270px; margin-right:20px; color:#000;}
 
 /****************************footer************************/
-footer { width:100%; position:relative; overflow:hidden; text-align:center; padding:33px 0 30px 0;}
+footer { float: left; width:100%; position:relative; overflow:hidden; text-align:center; padding:33px 0 30px 0;}
 
 /**********************form**********************/
 /*.map {width:250px; height:164px; border:#ddd 10px solid; background:#ddd; margin-top:8px; }*/

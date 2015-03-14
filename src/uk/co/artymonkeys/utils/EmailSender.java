@@ -55,7 +55,7 @@ public class EmailSender extends HttpServlet {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("Enquiry To Arty Monkeys");
+            message.setSubject(body != null ? "Enquiry To Arty Monkeys" : "Registration");
             message.setText("Name:\t\t" + name + "\nPhone:\t\t" + phone + "\nEmail:\t\t" + from
                     + "\n\n" + body);
 
@@ -65,26 +65,6 @@ public class EmailSender extends HttpServlet {
             mex.printStackTrace();
         }
 
-    }
-
-    @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        PrintWriter out = resp.getWriter();
-        out.println("<html>");
-        out.println("<body>");
-        out.println("<h1>Hello Servlet Get</h1>");
-        out.println("</body>");
-        out.println("</html>");
-    }
-
-    @Override
-    public void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        PrintWriter out = resp.getWriter();
-        out.println("<html>");
-        out.println("<body>");
-        out.println("<h1>Hello Servlet Put</h1>");
-        out.println("</body>");
-        out.println("</html>");
     }
 
 }
