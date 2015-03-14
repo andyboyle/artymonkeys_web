@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_artymonkeys_web" default="compile.module.artymonkeys_web">
+  <dirname property="module.artymonkeys_web.basedir" file="${ant.file.module_artymonkeys_web}"/>
+  
+  <property name="module.jdk.home.artymonkeys_web" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.artymonkeys_web" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.artymonkeys_web" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.artymonkeys_web" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="artymonkeys_web.output.dir" value="${module.artymonkeys_web.basedir}/out/production/artymonkeys_web"/>
+  <property name="artymonkeys_web.testoutput.dir" value="${module.artymonkeys_web.basedir}/out/test/artymonkeys_web"/>
+  
+  <path id="artymonkeys_web.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="artymonkeys_web.module.production.classpath">
+    <path refid="${module.jdk.classpath.artymonkeys_web}"/>
+    <path refid="library.javax.servlet.classpath"/>
+    <path refid="library.mail.classpath"/>
+    <path refid="library.dsn.classpath"/>
+  </path>
+  
+  <path id="artymonkeys_web.runtime.production.module.classpath">
+    <pathelement location="${artymonkeys_web.output.dir}"/>
+    <path refid="library.javax.servlet.classpath"/>
+    <path refid="library.mail.classpath"/>
+    <path refid="library.dsn.classpath"/>
+  </path>
+  
+  <path id="artymonkeys_web.module.classpath">
+    <path refid="${module.jdk.classpath.artymonkeys_web}"/>
+    <pathelement location="${artymonkeys_web.output.dir}"/>
+    <path refid="library.javax.servlet.classpath"/>
+    <path refid="library.mail.classpath"/>
+    <path refid="library.dsn.classpath"/>
+  </path>
+  
+  <path id="artymonkeys_web.runtime.module.classpath">
+    <pathelement location="${artymonkeys_web.testoutput.dir}"/>
+    <pathelement location="${artymonkeys_web.output.dir}"/>
+    <path refid="library.javax.servlet.classpath"/>
+    <path refid="library.mail.classpath"/>
+    <path refid="library.dsn.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.artymonkeys_web">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.artymonkeys_web">
+    <patternset refid="excluded.from.module.artymonkeys_web"/>
+  </patternset>
+  
+  <path id="artymonkeys_web.module.sourcepath">
+    <dirset dir="${module.artymonkeys_web.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.artymonkeys_web" depends="compile.module.artymonkeys_web.production,compile.module.artymonkeys_web.tests" description="Compile module artymonkeys_web"/>
+  
+  <target name="compile.module.artymonkeys_web.production" depends="register.custom.compilers" description="Compile module artymonkeys_web; production classes">
+    <mkdir dir="${artymonkeys_web.output.dir}"/>
+    <javac2 destdir="${artymonkeys_web.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.artymonkeys_web}/javac">
+      <compilerarg line="${compiler.args.artymonkeys_web}"/>
+      <bootclasspath refid="artymonkeys_web.module.bootclasspath"/>
+      <classpath refid="artymonkeys_web.module.production.classpath"/>
+      <src refid="artymonkeys_web.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.artymonkeys_web"/>
+    </javac2>
+    
+    <copy todir="${artymonkeys_web.output.dir}">
+      <fileset dir="${module.artymonkeys_web.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.artymonkeys_web.tests" depends="register.custom.compilers,compile.module.artymonkeys_web.production" description="compile module artymonkeys_web; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.artymonkeys_web" description="cleanup module">
+    <delete dir="${artymonkeys_web.output.dir}"/>
+    <delete dir="${artymonkeys_web.testoutput.dir}"/>
+  </target>
+</project>
