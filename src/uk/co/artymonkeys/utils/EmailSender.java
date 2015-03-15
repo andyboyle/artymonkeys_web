@@ -47,18 +47,36 @@ public class EmailSender extends HttpServlet {
             message.setSubject(IsGeneralEnquiry(body) ? "Enquiry To Arty Monkeys" : "Registration");
             message.setText("Name:\t\t" + name + "\nPhone:\t\t" + phone + "\nEmail:\t\t" + from
                     + (IsGeneralEnquiry(body) ? "\n\n" + body : ""));
-
             Transport.send(message);
+
+            MimeMessage messageResp = new MimeMessage(session);
+            messageResp.setFrom(new InternetAddress("no-reply@artymonkeys.co.uk"));
+            messageResp.addRecipient(Message.RecipientType.TO, new InternetAddress(from));
+            messageResp.setSubject(IsGeneralEnquiry(body) ? SUBJECT_ENQUIRY : SUBJECT_REGISTRATION);
+            messageResp.setText("Hi " + name + "\n\n" + (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION));
+            Transport.send(messageResp);
+
             System.out.println("Sent message successfully....");
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }
-
-        resp.sendRedirect("index.html");
+        PrintWriter out = resp.getWriter();
+        out.println("<script type=\"text/javascript\">");
+        out.println("alert('Email Sent Successfully');");
+        out.println("location='index.html';");
+        out.println("</script>");
     }
 
     private boolean IsGeneralEnquiry(String body) {
         return body != null;
     }
 
+    final private static String SUBJECT_REGISTRATION = "Confirmation Of Interest In Arty Monkeys";
+    final private static String SUBJECT_ENQUIRY = "Confirmation Of Enquiry To Arty Monkeys";
+    final private static String BODY_REGISTRATION = "Thank you for registering interest in Arty Monkeys." +
+            " We will keep you informed of any upcoming classes and events in future.\n\n" +
+            "Kind Regards,\n\nYvonne & Kelley";
+    final private static String BODY_ENQUIRY = "Thank you for your enquiry to Arty Monkeys.\n\n" +
+            "We look forward to responding to you promptly" +
+            "Kind Regards,\n\nYvonne & Kelley";
 }
