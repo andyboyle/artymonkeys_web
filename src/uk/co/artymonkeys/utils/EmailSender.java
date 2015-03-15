@@ -74,9 +74,9 @@ public class EmailSender extends HttpServlet {
     final private static String SUBJECT_REGISTRATION = "Confirmation Of Interest In Arty Monkeys";
     final private static String SUBJECT_ENQUIRY = "Confirmation Of Enquiry To Arty Monkeys";
     final private static String BODY_REGISTRATION = "Thank you for registering interest in Arty Monkeys." +
-            " We will keep you informed of any upcoming classes and events in future.\n\n" +
+            " We will keep you informed of any upcoming classes and events in future.\n\n\n" +
             "Kind Regards,\n\nYvonne & Kelley";
-    final private static String BODY_ENQUIRY = "Thank you for your enquiry to Arty Monkeys.\n\n" +
-            "We look forward to responding to you promptly" +
+    final private static String BODY_ENQUIRY = "Thank you for your enquiry to Arty Monkeys.\n\n\n" +
+            "We look forward to responding to you promptly.\n\n\n" +
             "Kind Regards,\n\nYvonne & Kelley";
 }
