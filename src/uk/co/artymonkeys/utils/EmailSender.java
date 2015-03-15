@@ -27,17 +27,6 @@ public class EmailSender extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        PrintWriter out = resp.getWriter();
-        out.println("<html>");
-        out.println("<body>");
-        out.println("<h1>Hello Servlet POST</h1>");
-        out.println("<div>Name: " + req.getParameter("name") + "<div>");
-        out.println("<div>Email: " + req.getParameter("email") + "<div>");
-        out.println("<div>Phone: " + req.getParameter("phone") + "<div>");
-        out.println("<div>Message: " + req.getParameter("message") + "<div>");
-        out.println("</body>");
-        out.println("</html>");
-
         String to = "andyjcboyle@gmail.com";
         String from = req.getParameter("email");
         String name = req.getParameter("name");
@@ -65,6 +54,7 @@ public class EmailSender extends HttpServlet {
             mex.printStackTrace();
         }
 
+        resp.sendRedirect("index.html");
     }
 
     private boolean IsGeneralEnquiry(String body) {

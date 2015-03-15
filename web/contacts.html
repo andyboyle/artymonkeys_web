@@ -12,40 +12,42 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.1.js"></script>
     <script>
-		$(document).ready(function(){				   	
-			$('.slider')._TMS({
-				show:0,
-				pauseOnHover:true,
-				prevBu:'.prev',
-				nextBu:'.next',
-				playBu:false,
-				duration:800,
-				preset:'fade',
-				pagination:true,
-				pagNums:false,
-				slideshow:7000,
-				numStatus:false,
-				banners:false,
-				waitBannerAnimation:false,
-				progressBar:false
-			})		
-		});
-	</script>
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        $(document).ready(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: true,
+                prevBu: '.prev',
+                nextBu: '.next',
+                playBu: false,
+                duration: 800,
+                preset: 'fade',
+                pagination: true,
+                pagNums: false,
+                slideshow: 7000,
+                numStatus: false,
+                banners: false,
+                waitBannerAnimation: false,
+                progressBar: false
+            })
+        });
+    </script>
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
         </a>
-      </div>
+    </div>
     <![endif]-->
     <!--[if lt IE 9]>
-   		<script type="text/javascript" src="js/html5.js"></script>
-    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-	<![endif]-->
+    <script type="text/javascript" src="js/html5.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
 </head>
 <body>
-  <div class="main">
-  <!--==============================header=================================-->
+<div class="main">
+    <!--==============================header=================================-->
     <header>
         <ul class="menu">
             <li><a href="index.html" class="clr-1">Home</a></li>
@@ -54,67 +56,52 @@
             <li><a href="gallery.html" class="clr-3">Gallery</a></li>
             <li class="current"><a href="contacts.html" class="clr-1">Contact Us</a></li>
         </ul>
+        <div class="fleft">
+            <div>
+                <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="220" width="302" alt=""></a>
+            </div>
 
-        <table align="center">
-            <tr>
-                <td>
-                    <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="220" width="302" alt=""></a>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Photo
-                            <td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </header>
-  <!--==============================content================================-->
-    <section id="content">
-        <div class="container_12">	
-          <div class="grid_4 bot-1">
-            <h2 class="top-6">Contact Us</h2>
-            <dl>
-                <dt>8901 Marmora Road, <br>Glasgow, D04 89GR.</dt>
-                <dd><span>Telephone: </span>+1 800 603 6035</dd>
-                <dd><span>E-mail: </span><a href="#" class="link">mail@demolink.org</a></dd>
-            </dl> 
-          </div>
-          <div class="grid_8">
-            <div class="block-1 top-5">
-            	<div class="block-1-shadow">
-                	<h2 class="clr-6">Contact Form</h2>
-                    <form id="form" action="/emailsender" method="post" >
-                      <fieldset>
-                        <label><strong>Name:</strong><input name="name" type="text" value=""><strong class="clear"></strong></label>
-                        <label><strong>Email:</strong><input name="email" type="text" value=""><strong class="clear"></strong></label>
-                        <label><strong>Phone:</strong><input name="phone" type="text" value=""><strong class="clear"></strong></label>
-                        <label><strong>Message:</strong><textarea name="message" ></textarea><strong class="clear"></strong></label>
-                        <strong class="clear"></strong>
-                      </fieldset>
-                        <div class="btns pad-2">
-                          <INPUT type="submit" value="Send">
+            <div>
+                <h2 class="top-7 clr-4">Contact Us</h2>
+                <dl>
+                    <dd class="clr-1"><span>Telephone: </span>07794 190060</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="block-1 top-6 fleft">
+            <div class="block-1-shadow">
+                <h2 class="clr-4">Contact Form</h2>
+
+                <form id="form" action="/emailsender" method="post">
+                    <div class="inputlabel">
+                        <div class="mediumsizebox clr-1">
+                            <strong>Name:</strong><input class="inputtextboxlarge" type="text" name="name"><br>
+                            <strong>EMail:</strong><input class="inputtextboxlarge" type="text" name="email"><br>
+                            <strong>Phone:</strong><input class="inputtextboxlarge" type="text" name="phone"><br>
+                            <strong>Message:</strong><textarea class="inputtextboxlarge" name="message"></textarea><br>
+                            <input class="registerinterestbutton" type="submit" value="Send">
                         </div>
 
-                    </form> 
-                </div>
+                    </div>
+                </form>
             </div>
-            <!--==============================footer=================================-->
-            <footer>
-                <p>© 2012 Art School</p>
-                <p>Website Template by <a class="link" href="http://www.templatemonster.com/" target="_blank" rel="nofollow">www.templatemonster.com</a></p>
-            </footer>	  
-          </div>
-          <div class="clear"></div>
         </div>
-    </section>    
-   </div>      
+
+    </header>
+    <!--==============================content================================-->
+    <section id="content">
+
+        <!--==============================footer=================================-->
+        <footer>
+            <p>© 2012 Art School</p>
+
+            <p>Website Template by <a class="link" href="http://www.templatemonster.com/" target="_blank"
+                                      rel="nofollow">www.templatemonster.com</a></p>
+        </footer>
+</div>
+<div class="clear"></div>
+</div>
+</section>
+</div>
 </body>
 </html>
