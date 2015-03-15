@@ -46,7 +46,8 @@ a:hover {text-decoration:none;}
 
 h2 { font-size:40px; line-height:50px; color:#63d; font-weight:bold; font-family: 'Cabin Sketch', cursive; letter-spacing:-1px;}
 h3 { margin:0px 0px 0px 0px; font-size:20px; line-height:30px; color:#0072ff;
-    font-family: 'Purisa,arial', serif;}
+    font-family: 'Cabin Sketch', serif;
+    }
 /** andy color 6a2 **/
 
 ul {margin:0; padding:0;list-style-image:none;}

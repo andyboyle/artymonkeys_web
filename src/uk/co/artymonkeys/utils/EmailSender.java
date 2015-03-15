@@ -55,9 +55,9 @@ public class EmailSender extends HttpServlet {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject(body != null ? "Enquiry To Arty Monkeys" : "Registration");
+            message.setSubject(IsGeneralEnquiry(body) ? "Enquiry To Arty Monkeys" : "Registration");
             message.setText("Name:\t\t" + name + "\nPhone:\t\t" + phone + "\nEmail:\t\t" + from
-                    + "\n\n" + body);
+                    + (IsGeneralEnquiry(body) ? "\n\n" + body : ""));
 
             Transport.send(message);
             System.out.println("Sent message successfully....");
@@ -65,6 +65,10 @@ public class EmailSender extends HttpServlet {
             mex.printStackTrace();
         }
 
+    }
+
+    private boolean IsGeneralEnquiry(String body) {
+        return body != null;
     }
 
 }
