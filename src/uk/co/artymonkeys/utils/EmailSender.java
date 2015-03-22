@@ -13,15 +13,15 @@ import java.util.Properties;
 
 public class EmailSender extends HttpServlet {
 
-    final String username = "artymonkeys@gmail.com";
-    final String password = "oYIn9GTMJ4Ba";
+    final String username = "no-reply@artymonkeys.co.uk";
+    final String password = "x6AyIMTve4Wr";
 
     final Properties props = new Properties();
 
     public EmailSender() {
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.host", "smtp.fasthosts.co.uk");
         props.put("mail.smtp.port", "587");
     }
 
@@ -42,7 +42,7 @@ public class EmailSender extends HttpServlet {
 
         try {
             MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(from));
+            message.setFrom(new InternetAddress(username));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setSubject(IsGeneralEnquiry(body) ? "Enquiry To Arty Monkeys" : "Registration");
             message.setText("Name:\t\t" + name + "\nPhone:\t\t" + phone + "\nEmail:\t\t" + from
@@ -50,19 +50,26 @@ public class EmailSender extends HttpServlet {
             Transport.send(message);
 
             MimeMessage messageResp = new MimeMessage(session);
-            messageResp.setFrom(new InternetAddress("no-reply@artymonkeys.co.uk"));
+            messageResp.setFrom(new InternetAddress(username));
             messageResp.addRecipient(Message.RecipientType.TO, new InternetAddress(from));
             messageResp.setSubject(IsGeneralEnquiry(body) ? SUBJECT_ENQUIRY : SUBJECT_REGISTRATION);
-            messageResp.setText("Hi " + name + "\n\n" + (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION));
+            messageResp.setText("Hi " + name + "\n\n" + (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION) +
+                    AUTOMATED_MSG);
             Transport.send(messageResp);
 
             System.out.println("Sent message successfully....");
+            PrintWriter out = resp.getWriter();
+            out.println("<script type=\"text/javascript\">");
+            out.println("alert('Email Sent Successfully');");
+            out.println("location='index.html';");
+            out.println("</script>");
+
         } catch (MessagingException mex) {
             mex.printStackTrace();
         }
         PrintWriter out = resp.getWriter();
         out.println("<script type=\"text/javascript\">");
-        out.println("alert('Email Sent Successfully');");
+        out.println("alert('Error Sending.');");
         out.println("location='index.html';");
         out.println("</script>");
     }
@@ -73,10 +80,11 @@ public class EmailSender extends HttpServlet {
 
     final private static String SUBJECT_REGISTRATION = "Confirmation Of Interest In Arty Monkeys";
     final private static String SUBJECT_ENQUIRY = "Confirmation Of Enquiry To Arty Monkeys";
-    final private static String BODY_REGISTRATION = "Thank you for registering interest in Arty Monkeys." +
-            " We will keep you informed of any upcoming classes and events in future.\n\n\n" +
-            "Kind Regards,\n\nYvonne & Kelley";
-    final private static String BODY_ENQUIRY = "Thank you for your enquiry to Arty Monkeys.\n\n\n" +
-            "We look forward to responding to you promptly.\n\n\n" +
-            "Kind Regards,\n\nYvonne & Kelley";
+    final private static String BODY_REGISTRATION = "Thanks for your interest in Arty Monkeys, " +
+            "we'll be in touch soon.\n\n\n" +
+            "Kind Regards,\n\nYvonne & Kelley\n";
+    final private static String BODY_ENQUIRY = "Thanks your enquiry to Arty Monkeys.\n\n\n" +
+            "We'll respond to your query as soon as possible.\n\n\n" +
+            "Kind Regards,\n\nYvonne & Kelley\n";
+    final private static String AUTOMATED_MSG = "\n\n*** This is an automated message, please don't reply directly. Thanks! ***";
 }

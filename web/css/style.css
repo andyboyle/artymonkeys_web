@@ -390,7 +390,7 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 
 .registerinterestcontainer {
-    margin: 20px 10px 20px 30px;
+    margin: 35px 10px 20px 10px;
     padding: 10px 3px 10px 3px;
     width: 510px;
     height: 60px;
@@ -438,8 +438,8 @@ ul.menu li:hover a, ul.menu li.current a {
 
 .registerinterestbutton {
     float: right;
-    margin: 8px 12px 15px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 8px 12px 15px 2px;
+    padding: 5px 5px 5px 2px;
     border: ridge #a8d8d5;
     font-size: 22px;
     min-font-size: 15px;
@@ -465,6 +465,11 @@ ul.menu li:hover a, ul.menu li.current a {
 .block-1 {
     width: 580px;
     margin: 12px 0 10px 50px;
+}
+
+.block-header-right {
+    width: 580px;
+    margin: 12px 0 10px 10px;
 }
 
 .block-1-shadow {
