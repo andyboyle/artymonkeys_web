@@ -57,21 +57,19 @@ public class EmailSender extends HttpServlet {
                     AUTOMATED_MSG);
             Transport.send(messageResp);
 
-            System.out.println("Sent message successfully....");
             PrintWriter out = resp.getWriter();
             out.println("<script type=\"text/javascript\">");
             out.println("alert('Email Sent Successfully');");
             out.println("location='index.html';");
             out.println("</script>");
-
         } catch (MessagingException mex) {
             mex.printStackTrace();
+            PrintWriter out = resp.getWriter();
+            out.println("<script type=\"text/javascript\">");
+            out.println("alert('Error Sending.');");
+            out.println("location='index.html';");
+            out.println("</script>");
         }
-        PrintWriter out = resp.getWriter();
-        out.println("<script type=\"text/javascript\">");
-        out.println("alert('Error Sending.');");
-        out.println("location='index.html';");
-        out.println("</script>");
     }
 
     private boolean IsGeneralEnquiry(String body) {

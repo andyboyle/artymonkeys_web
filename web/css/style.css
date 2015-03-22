@@ -374,7 +374,7 @@ ul.menu {
 ul.menu li {
     float: left;
     line-height: 50px;
-    margin: 0 130px 0 0;
+    margin: 0 100px 0 0;
 }
 
 ul.menu li a {
@@ -390,6 +390,62 @@ ul.menu li a {
 ul.menu li:hover a, ul.menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
+}
+
+.th1 {
+    width: 300px;
+    font-weight: bold;
+}
+
+.th2 {
+    color: #140676;
+    width: 550px;
+    font-weight: bold;
+}
+
+ul.bullet {list-style-type: disc;}
+table {
+    border-collapse: collapse;
+    font-size: smaller;
+}
+table td, table th {
+    border: 1px groove blue;
+}
+table tr:first-child th {
+    border-top: 5px;
+}
+table tr:last-child td {
+    border-bottom: 5px;
+}
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 5px;
+}
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 5px;
+}
+.tableheader {
+    background-color: #6633dd;
+    color: #d9a220;
+}
+
+.datatable {
+    border: 1px groove blue;
+    border-collapse: collapse;
+    color: #0072ff;
+    background-color: beige;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: bisque;
+    background-color: #140676;
 }
 
 strong {
@@ -462,13 +518,6 @@ strong {
     width: 1000px;
     margin: auto;
     bottom: auto;
-}
-
-.art {
-    background: url(../images/art.png) 0 0 no-repeat;
-    width: 320px;
-    height: 159px;
-    margin: 0 0 0 -30px;
 }
 
 .block-1 {
