@@ -300,6 +300,9 @@ ul.list-2 li a:hover {
 .pad-3 {
     padding: 12px 0px 27px 0px;
 }
+.pad-about {
+    padding: 12px 0px 5px 0px;
+}
 
 .pad-4 {
     padding: 10px 150px 0 30px;
@@ -371,7 +374,7 @@ ul.menu {
 ul.menu li {
     float: left;
     line-height: 50px;
-    margin: 0 140px 0 0;
+    margin: 0 130px 0 0;
 }
 
 ul.menu li a {
@@ -387,6 +390,12 @@ ul.menu li a {
 ul.menu li:hover a, ul.menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
 }
 
 .registerinterestcontainer {
