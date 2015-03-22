@@ -262,7 +262,7 @@ ul.list-2 li a:hover {
 }
 
 .top-7 {
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .left-1 {
@@ -298,14 +298,14 @@ ul.list-2 li a:hover {
 }
 
 .pad-3 {
-    padding: 12px 0px 27px 0px;
+    padding: 12px 0 27px 0;
 }
 .pad-about {
-    padding: 12px 0px 5px 0px;
+    padding: 12px 0 5px 0;
 }
 
 .pad-4 {
-    padding: 10px 150px 0 30px;
+    padding: 10px 0 0 30px;
 }
 
 .p1 {
@@ -399,9 +399,9 @@ strong {
 }
 
 .registerinterestcontainer {
-    margin: 35px 10px 20px 10px;
-    padding: 10px 3px 10px 3px;
-    width: 510px;
+    margin: 5px 10px 20px 10px;
+    padding: 10px 3px 10px 15px;
+    width: 560px;
     height: 60px;
     background-color: #ffffff;
 }
@@ -434,7 +434,7 @@ strong {
     font-size: 14px;
     border: thin #6633dd;
     background-color: #a8d8d5;
-    width: 200px;
+    width: 250px;
     border-radius: 7px;
 }
 
@@ -473,7 +473,7 @@ strong {
 
 .block-1 {
     width: 580px;
-    margin: 12px 0 10px 50px;
+    margin: 12px 0 10px 70px;
 }
 
 .block-header-right {
