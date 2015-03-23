@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    font-size: 14px/22px;
+    font-size: 12px;
     font-family: Purisa, "Times New Roman", Times, serif;
     color: #bf8b37;
     min-width: 1000px;
@@ -298,10 +298,10 @@ ul.list-2 li a:hover {
 }
 
 .pad-3 {
-    padding: 12px 0 27px 0;
+    padding: 12px 0 10px 0;
 }
 .pad-about {
-    padding: 12px 0 5px 0;
+    padding: 12px 0 0 0;
 }
 
 .pad-4 {
@@ -403,13 +403,12 @@ ul.menu li:hover a, ul.menu li.current a {
     font-weight: bold;
 }
 
-ul.bullet {list-style-type: disc;}
 table {
-    border-collapse: collapse;
-    font-size: smaller;
+    border-collapse: collapse; 
+    font-size: 11px;
 }
 table td, table th {
-    border: 1px groove blue;
+    border: 1px ridge black;
 }
 table tr:first-child th {
     border-top: 5px;
@@ -425,23 +424,33 @@ table tr td:last-child,
 table tr th:last-child {
     border-right: 5px;
 }
+
+.bluebk {
+    background: lightskyblue;
+}
+
+.greenbk {
+    background: lawngreen;
+}
+
 .tableheader {
-    background-color: #6633dd;
-    color: #d9a220;
+    background-color: beige;
+    color: black;
+    font-size: 13px;
 }
 
 .datatable {
-    border: 1px groove blue;
+    border: 1px ridge black;
     border-collapse: collapse;
-    color: #0072ff;
+    color: black;
     background-color: beige;
 }
 
 table#t01 tr:nth-child(even) {
-    background-color: #eee;
+    background-color: #a400b3;
 }
 table#t01 tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: #b30800;
 }
 table#t01 th {
     color: bisque;

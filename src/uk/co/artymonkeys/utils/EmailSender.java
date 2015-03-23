@@ -27,7 +27,7 @@ public class EmailSender extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String to = "andyjcboyle@gmail.com";
+        String to = "info@artymonkeys.co.uk";
         String from = req.getParameter("email");
         String name = req.getParameter("name");
         String phone = req.getParameter("phone");
@@ -40,6 +40,8 @@ public class EmailSender extends HttpServlet {
                     }
                 });
 
+        resp.setContentType("text/html");
+        PrintWriter out = resp.getWriter();
         try {
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(username));
@@ -56,19 +58,19 @@ public class EmailSender extends HttpServlet {
             messageResp.setText("Hi " + name + "\n\n" + (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION) +
                     AUTOMATED_MSG);
             Transport.send(messageResp);
-
-            PrintWriter out = resp.getWriter();
-            out.println("<script type=\"text/javascript\">");
+            out.println("<script>");
             out.println("alert('Email Sent Successfully');");
             out.println("location='index.html';");
             out.println("</script>");
         } catch (MessagingException mex) {
             mex.printStackTrace();
-            PrintWriter out = resp.getWriter();
-            out.println("<script type=\"text/javascript\">");
+            out.println("<script>");
             out.println("alert('Error Sending.');");
             out.println("location='index.html';");
             out.println("</script>");
+        } finally {
+            out.flush();
+            out.close();
         }
     }
 
