@@ -404,6 +404,7 @@ ul.menu {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    width: 835px;
 }
 
 ul.menu li {
@@ -436,18 +437,16 @@ ul.menu li:hover a, ul.menu li.current a {
     margin-top: 60px;
 }
 
-th {
-    margin: 0 0 0 0;
-}
-
 .th1 {
     width: 280px;
+    max-width: 280px;
     font-weight: bold;
 }
 
 .th2 {
     color: #140676;
     width: 568px;
+    max-width: 568px;
     font-weight: bold;
 }
 
@@ -476,6 +475,10 @@ table tr th:first-child {
 table tr td:last-child,
 table tr th:last-child {
     border-right: 5px;
+}
+
+.tablewidth {
+    width: 840px;
 }
 
 .bluebk {
@@ -557,6 +560,7 @@ strong {
     float: right;
     margin: 0 2px 1px 5px;
     padding: 2px 3px 2px 3px;
+    color: #140676;
     color: #140676;
     font-size: 14px;
     border: thin #6633dd;
