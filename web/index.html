@@ -16,6 +16,21 @@
     <script src="js/tms-0.4.1.js"></script>
     <script>
         $(document).ready(function () {
+            var menu = $('#menu'),
+                    pos = menu.offset();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > pos.top + menu.height() && menu.hasClass('default')) {
+                    menu.fadeOut('fast', function () {
+                        $(this).removeClass('default').addClass('fixed').fadeIn('fast');
+                    });
+                } else if ($(this).scrollTop() <= pos.top && menu.hasClass('fixed')) {
+                    menu.fadeOut('fast', function () {
+                        $(this).removeClass('fixed').addClass('default').fadeIn('fast');
+                    });
+                }
+            });
+
             $('.slider')._TMS({
                 show: 0,
                 pauseOnHover: true,
@@ -59,7 +74,7 @@
             <li><a href="classes.html" class="clr-5">Classes</a></li>
             <li><a href="contacts.html" class="clr-8">Contact Us</a></li>
         </ul>
-        <div class="fleft clr-blue">
+        <div class="fleft clr-blue headerbuffer">
             <div>
                 <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="150" width="205"
                                           alt="Arty Monkeys"></a>
@@ -67,7 +82,7 @@
             “Every child is an artist”<br>Pablo Picasso
         </div>
         <div class="block-header-right top-6 fleft">
-            <h2 class="pad-4 clr-2 h2header">
+            <h2 class="headerbuffer pad-4 clr-2 h2header">
                 Arty Monkeys classes for pre-school children encourage active discovery and
                 exploration through themed learning experiences.
             </h2>
@@ -94,6 +109,7 @@
         <div class="container_12">
             <div class="grid_4 bot-0 fleft clr-2">
                 <a href="#" class="link-1 top-3">News</a>
+
                 <p><br>Coming soon to Stirling and the surrounding area.</p>
 
                 <p>Register your interest now!</p>
@@ -101,7 +117,7 @@
                 <a href="#" class="link-1 top-3">What We Do</a>
 
                 <p><br>Our Mission is to create a relaxed and supportive environment which ignites the imagination and
-                    creativity of young minds.<br><br> </p>
+                    creativity of young minds.<br><br></p>
                 <br>
             </div>
             <div class="grid_7 fleft">
@@ -123,14 +139,16 @@
                 <p>Through exploring different materials such as paint, clay,
                     sponges,
                     rollers and textured papers we will help develop your child's cognitive, social and language
-                    skills. <br>Our weekly classes are all based on popular stories or nursery rhymes which gives children a context
+                    skills. <br>Our weekly classes are all based on popular stories or nursery rhymes which gives
+                    children a context
                     for their ideas and creativity.
                 </p>
 
             </div>
             <footer>
-                <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/" target="_blank"
-                                          rel="nofollow">www.templatemonster.com</a></p>
+                <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                                        target="_blank"
+                                                        rel="nofollow">www.templatemonster.com</a></p>
             </footer>
 
         </div>
