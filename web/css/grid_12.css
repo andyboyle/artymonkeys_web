@@ -38,7 +38,11 @@
 }
 
 .container_12 .grid_6 {
-    width: 420px
+    width: 410px
+}
+
+.grid_6 {
+    margin-right: 20px;
 }
 
 .container_12 .grid_7 {

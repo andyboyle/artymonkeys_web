@@ -135,7 +135,7 @@ a:hover {
 }
 
 .clr-9 {
-    color: purple;
+    color: seagreen;
 }
 .text-1 {
     font-size: 18px;
@@ -328,7 +328,7 @@ ul.list-2 li a:hover {
 }
 
 .pad-about {
-    padding: 12px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .pad-4 {
@@ -409,7 +409,7 @@ ul.menu {
 
 ul.menu li {
     float: left;
-    line-height: 50px;
+    line-height: 35px;
     padding: 0 28px 0 28px;
 }
 
@@ -434,7 +434,7 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 
 .headerbuffer {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .th1 {
@@ -718,9 +718,10 @@ footer {
 }
 
 .pablo {
-    color: orangered;
+    color: purple;
     font-family: 'Cabin Sketch', serif;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .boldy {
