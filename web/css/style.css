@@ -716,3 +716,13 @@ footer {
 .rightaside {
     float: right;
 }
+
+.pablo {
+    color: orangered;
+    font-family: 'Cabin Sketch', serif;
+    font-size: 13px;
+}
+
+.boldy {
+    font-weight: bold;
+}
