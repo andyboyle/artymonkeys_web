@@ -193,6 +193,14 @@ ul.list-2 li a:hover {
     color: #0072ff;
 }
 
+.h2header {
+    font-size: 20px;
+    line-height: 23px;
+    color: #63d;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
 /******************************************************************/
 .clear {
     clear: both;
