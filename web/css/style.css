@@ -21,7 +21,7 @@ body {
 }
 
 p {
-    color: #47a935;
+    color: green;
     font-weight: bolder;
 }
 
@@ -39,7 +39,7 @@ p {
 }
 
 .main {
-    overflow:auto;
+    overflow: auto;
     width: 100%;
     background: url(../images/bg.jpg) center no-repeat;
 }
@@ -95,8 +95,12 @@ a:hover {
     color: #0072ff;
 }
 
+.clr-blue {
+    color: #63d
+}
+
 .clr-2 {
-    color: #47a935;
+    color: lawngreen;
 }
 
 .clr-3 {
@@ -110,8 +114,9 @@ a:hover {
 .clr-lightblue {
     color: #a8d8d5;
 }
+
 .clr-5 {
-    color: #a400b3;
+    color: violet;
 }
 
 .clr-6 {
@@ -122,6 +127,13 @@ a:hover {
     color: #ddd;
 }
 
+.clr-8 {
+    color: yellow;
+}
+
+.clr-9 {
+    color: purple;
+}
 .text-1 {
     font-size: 18px;
     line-height: 25px;
@@ -136,19 +148,22 @@ a:hover {
     font-style: italic;
 }
 
+.header-font {
+    font-weight: bold;
+}
+
 h2 {
     font-size: 40px;
     line-height: 50px;
     color: #63d;
     font-weight: bold;
-    font-family: 'Cabin Sketch', cursive;
     letter-spacing: -1px;
 }
 
 h3 {
     margin: 0px 0px 0px 0px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 45px;
+    line-height: 50px;
     color: #0072ff;
     font-family: 'Cabin Sketch', serif;
 }
@@ -194,8 +209,8 @@ ul.list-2 li a:hover {
 }
 
 .h2header {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 22px;
     color: #63d;
     font-weight: bold;
     letter-spacing: -1px;
@@ -308,6 +323,7 @@ ul.list-2 li a:hover {
 .pad-3 {
     padding: 12px 0 10px 0;
 }
+
 .pad-about {
     padding: 12px 0 0 0;
 }
@@ -372,25 +388,32 @@ ul.menu {
     padding: 0 5px 0 5px;
     margin: 5px 0 5px 0;
     display: inline-block;
-    background: #dfdfdf;
+    /*background: #dfdfdf;*/
     width: 835px;
-    border: solid beige;
-    border-right-color: #cdcdcd;
-    border-bottom-color: #cdcdcd;
+    border: solid cornflowerblue;
+    border-right-color: #0f67a1;
+    border-bottom-color: #0f67a1;
+    background: -webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0%, #426d9c),
+    color-stop(40%, #0f67a1),
+    color-stop(100%, #1384d1));
+    background: -moz-linear-gradient(top, #426d9c, #0f67a1, #1384d1);
+
 }
 
 ul.menu li {
     float: left;
     line-height: 50px;
-    margin: 0 100px 0 0;
+    margin: 0 70px 0 0;
 }
 
 ul.menu li a {
     font-size: 20px;
-    line-height: 35px;
-    font-family: 'Cabin Sketch', cursive;
+    line-height: 30px;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: bold;
     letter-spacing: -2px;
     display: block;
 }
@@ -401,65 +424,74 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 
 .th1 {
-    width: 300px;
+    width: 200px;
     font-weight: bold;
 }
 
 .th2 {
     color: #140676;
-    width: 550px;
+    width: 630px;
     font-weight: bold;
 }
 
 table {
-    border-collapse: collapse; 
+    border-collapse: collapse;
     font-size: 11px;
 }
+
 table td, table th {
-    border: 1px ridge black;
+    border: 1px ridge blue;
 }
+
 table tr:first-child th {
     border-top: 5px;
 }
+
 table tr:last-child td {
     border-bottom: 5px;
 }
+
 table tr td:first-child,
 table tr th:first-child {
     border-left: 5px;
 }
+
 table tr td:last-child,
 table tr th:last-child {
     border-right: 5px;
 }
 
 .bluebk {
-    background: lightskyblue;
+    background: darkblue;
 }
 
 .greenbk {
-    background: lawngreen;
+    background: midnightblue;
 }
 
 .tableheader {
-    background-color: beige;
-    color: black;
+    background-color: gold;
+    color: blue;
+    font-weight: bold;
     font-size: 13px;
 }
 
 .datatable {
-    border: 1px ridge black;
+    border: 1px ridge blue;
     border-collapse: collapse;
-    color: black;
+    color: gold;
     background-color: beige;
+    font-weight: bold;
 }
 
 table#t01 tr:nth-child(even) {
     background-color: #a400b3;
 }
+
 table#t01 tr:nth-child(odd) {
     background-color: #b30800;
 }
+
 table#t01 th {
     color: bisque;
     background-color: #140676;
@@ -482,8 +514,8 @@ strong {
 .inputlabel {
     margin: 0 5px 0 5px;
     float: left;
-    color: #13610b;
     font-size: 13px;
+    font-weight: bold;
     background-color: inherit;
 }
 
@@ -510,7 +542,6 @@ strong {
     width: 250px;
     border-radius: 7px;
 }
-
 
 .mediumsizebox {
     margin: 10px 5px 5px 20px;
