@@ -17,7 +17,7 @@ body {
     font-family: Purisa, "Times New Roman", Times, serif;
     color: #bf8b37;
     min-width: 960px;
-    background: #000000;
+    background: white;
 }
 
 p {
@@ -41,7 +41,24 @@ p {
 .main {
     overflow: auto;
     width: 100%;
-    background: url(../images/bg.jpg) center no-repeat;
+}
+
+.main::after {
+    content: "";
+    background: url(../images/bg_paint.jpg) no-repeat;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.artymonkeyimage {
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px #446688;
 }
 
 /***********************************************************************/
@@ -94,6 +111,7 @@ a:hover {
 .clr-0 {
     color: lightslategrey;
 }
+
 .clr-1 {
     color: #0072ff;
 }
@@ -137,6 +155,7 @@ a:hover {
 .clr-9 {
     color: seagreen;
 }
+
 .text-1 {
     font-size: 18px;
     line-height: 25px;
@@ -217,6 +236,7 @@ ul.list-2 li a:hover {
     color: #63d;
     font-weight: bold;
     letter-spacing: -1px;
+    text-shadow: 1px 1px #ffa3f3;
 }
 
 /******************************************************************/
@@ -332,7 +352,7 @@ ul.list-2 li a:hover {
 }
 
 .pad-4 {
-    padding: 10px 0 0 30px;
+    padding: 0 0 0 30px;
 }
 
 .p1 {
@@ -434,7 +454,7 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 
 .headerbuffer {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .th1 {
@@ -529,11 +549,15 @@ strong {
 }
 
 .registerinterestcontainer {
-    margin: 5px 10px 20px 10px;
+    margin: 35px 10px 20px 10px;
     padding: 10px 3px 10px 15px;
     width: 560px;
     height: 60px;
     background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 10px 10px 5px #446688;
+
 }
 
 .inputlabel {
@@ -722,6 +746,7 @@ footer {
     font-family: 'Cabin Sketch', serif;
     font-size: 18px;
     font-weight: bold;
+    background: white;
 }
 
 .boldy {
