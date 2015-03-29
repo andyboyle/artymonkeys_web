@@ -6,9 +6,23 @@
 
 .pagination { display:none; }
 
-.prev {position:absolute; top:121px; left:25px; display:block; width:30px; height:35px; background:url(../images/prev-half.png) 0 0 no-repeat; z-index:99;}
+.prev {position:absolute;
+    top:121px;
+    left:25px;
+    display:block;
+    width:30px;
+    height:35px;
+    background:url(../images/prev-half.png) 0 0 no-repeat;
+    z-index:99;}
 .prev:hover {background-position:0 bottom;}
-.next {position:absolute; top:121px; right:25px; display:block; width:30px; height:35px; background:url(../images/next-half.png) 0 bottom no-repeat; z-index:99;}
+.next {position:absolute;
+    top:121px;
+    right:25px;
+    display:block;
+    width:30px;
+    height:35px;
+    background:url(../images/next-half.png) 0 bottom no-repeat;
+    z-index:99;}
 .next:hover {background-position:0 0;}
 
 .banner{display:none;}
