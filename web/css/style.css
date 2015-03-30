@@ -20,6 +20,22 @@ body {
     background: white;
 }
 
+.whitebk {
+    background: white;
+}
+
+body::after {
+    content: "";
+    background: url(../images/bg.jpg) repeat;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 p {
     color: green;
     font-weight: bolder;
@@ -43,22 +59,10 @@ p {
     width: 100%;
 }
 
-.main::after {
-    content: "";
-    background: url(../images/bg_paint.jpg) no-repeat;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
 .artymonkeyimage {
-    border-radius: 5px;
-    border: 2px solid white;
-    box-shadow: 10px 10px 5px #446688;
+    /*border-radius: 5px;*/
+    /*border: 2px solid white;*/
+    /*box-shadow: 10px 10px 5px #446688;*/
 }
 
 /***********************************************************************/
@@ -390,6 +394,7 @@ header {
     margin: 0 auto;
     z-index: 101;
     right: 0;
+    background: white;
 }
 
 h1 {
@@ -404,12 +409,14 @@ nav {
     margin: 0 0 0 20px;
     height: 300px;
     overflow: hidden;
-    padding: 0px;
+    padding: 0 0 7px 0;
 }
 
 ul.menu {
     margin-top: 5px;
     position: fixed;
+    width: 720px;
+    margin-left: 40px;
     top: 0;
     border: solid cornflowerblue;
     border-right-color: #0f67a1;
@@ -424,18 +431,17 @@ ul.menu {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    width: 835px;
 }
 
 ul.menu li {
     float: left;
-    line-height: 35px;
+    line-height: 24px;
     padding: 0 28px 0 28px;
 }
 
 ul.menu li a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 17px;
+    line-height: 35px;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px 1px #000;
@@ -554,9 +560,9 @@ strong {
     width: 560px;
     height: 60px;
     background-color: #ffffff;
-    border-radius: 5px;
-    border: 2px solid white;
-    box-shadow: 10px 10px 5px #446688;
+    /*border-radius: 5px;*/
+    /*border: 2px solid white;*/
+    /*box-shadow: 10px 10px 5px #446688;*/
 
 }
 
@@ -616,6 +622,7 @@ strong {
     width: 960px;
     margin: auto;
     bottom: auto;
+    background: white;
 }
 
 .block-1 {
