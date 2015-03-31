@@ -59,12 +59,6 @@ p {
     width: 100%;
 }
 
-.artymonkeyimage {
-    /*border-radius: 5px;*/
-    /*border: 2px solid white;*/
-    /*box-shadow: 10px 10px 5px #446688;*/
-}
-
 /***********************************************************************/
 a {
     text-decoration: none;
@@ -235,12 +229,12 @@ ul.list-2 li a:hover {
 }
 
 .h2header {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 14px;
     color: #63d;
     font-weight: bold;
     letter-spacing: -1px;
-    text-shadow: 1px 1px #ffa3f3;
+    text-shadow: 1px 1px #ffff00;
 }
 
 /******************************************************************/
@@ -413,20 +407,23 @@ nav {
 }
 
 ul.menu {
-    margin-top: 5px;
-    position: fixed;
+    /*margin-top: 5px;*/
+    /*position: fixed;*/
     width: 720px;
-    margin-left: 40px;
-    top: 0;
+    /*margin-left: 40px;*/
+    /*top: 0;*/
+
     border: solid cornflowerblue;
     border-right-color: #0f67a1;
     border-bottom-color: #0f67a1;
+
     background: -webkit-gradient(linear,
-    left top,
-    left bottom,
-    color-stop(0%, #426d9c),
-    color-stop(40%, #0f67a1),
-    color-stop(100%, #1384d1));
+        left top,
+        left bottom,
+        color-stop(0%, #426d9c),
+        color-stop(40%, #0f67a1),
+        color-stop(100%, #1384d1));
+
     background: -moz-linear-gradient(top, #426d9c, #0f67a1, #1384d1);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -460,7 +457,7 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 
 .headerbuffer {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .th1 {
@@ -557,7 +554,7 @@ strong {
 .registerinterestcontainer {
     margin: 35px 10px 20px 10px;
     padding: 10px 3px 10px 15px;
-    width: 560px;
+    width: 760px;
     height: 60px;
     background-color: #ffffff;
     /*border-radius: 5px;*/
@@ -567,10 +564,7 @@ strong {
 }
 
 .inputlabel {
-    margin: 0 5px 0 5px;
     float: left;
-    font-size: 13px;
-    font-weight: bold;
     background-color: inherit;
 }
 
@@ -587,16 +581,27 @@ strong {
 }
 
 .inputtextboxsmall {
-    float: right;
-    margin: 0 2px 1px 5px;
-    padding: 2px 3px 2px 3px;
+    float: left;
+    margin: 20px 6px 4px 40px;
+    padding: 8px 5px 5px 2px;
     color: #140676;
-    color: #140676;
-    font-size: 14px;
+    font-size: 17px;
+    min-font-size: 12px;
     border: thin #6633dd;
     background-color: #a8d8d5;
-    width: 250px;
-    border-radius: 7px;
+    border-radius: 8px;
+}
+
+.registerinterestbutton {
+    float: left;
+    margin: 0 6px 4px 6px;
+    padding: 5px 5px 5px 2px;
+    color: #a8d8d5;
+    font-size: 17px;
+    min-font-size: 12px;
+    border: thin #6633dd;
+    background-color: #140676;
+    border-radius: 8px;
 }
 
 .mediumsizebox {
@@ -605,17 +610,6 @@ strong {
     height: 30px;
 }
 
-.registerinterestbutton {
-    float: right;
-    margin: 8px 12px 15px 2px;
-    padding: 5px 5px 5px 2px;
-    border: ridge #a8d8d5;
-    font-size: 22px;
-    min-font-size: 15px;
-    background-color: #a8d8d5;
-    color: #140676;
-    border-radius: 20px;
-}
 
 /*********************************content*************************************/
 #content {
@@ -623,6 +617,10 @@ strong {
     margin: auto;
     bottom: auto;
     background: white;
+}
+
+.contentpadding {
+    margin-top: 210px;
 }
 
 .block-1 {
@@ -748,10 +746,16 @@ footer {
     float: right;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .pablo {
-    color: purple;
+    color: midnightblue;
     font-family: 'Cabin Sketch', serif;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: bold;
     background: white;
 }
