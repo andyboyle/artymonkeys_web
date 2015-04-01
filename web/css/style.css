@@ -25,6 +25,51 @@ body {
     background: white;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.link {
+    color: #dd0a00;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link-1 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #dd0a00;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+.link-1:hover {
+    color: #777;
+}
+
+.link-2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #0072ff;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', cursive;
+    letter-spacing: -1px;
+    display: inline-block;
+}
+
+.link-2:hover {
+    color: #b30800;
+}
+
 #wrapper {
     width: 960px;
     margin: auto;
@@ -208,3 +253,5 @@ ul.menu li:hover a, ul.menu li.current a {
     -webkit-transition-property: color, background;
     -webkit-transition-duration: 0.5s, 0.5s;
 }
+
+
