@@ -7,9 +7,7 @@
     <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.7.min.js"></script>
@@ -17,21 +15,6 @@
     <script src="js/tms-0.4.1.js"></script>
     <script>
         $(document).ready(function () {
-            var menu = $('#menu'),
-                    pos = menu.offset();
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > pos.top + menu.height() && menu.hasClass('default')) {
-                    menu.fadeOut('fast', function () {
-                        $(this).removeClass('default').addClass('fixed').fadeIn('fast');
-                    });
-                } else if ($(this).scrollTop() <= pos.top && menu.hasClass('fixed')) {
-                    menu.fadeOut('fast', function () {
-                        $(this).removeClass('fixed').addClass('default').fadeIn('fast');
-                    });
-                }
-            });
-
             $('.slider')._TMS({
                 show: 0,
                 pauseOnHover: true,
@@ -65,16 +48,17 @@
     <![endif]-->
 </head>
 <body>
-<div class="main">
-    <!--==============================header=================================-->
-    <header class="fixed">
-        <div class="clr-blue pablo fleft">
-            <div>
-                <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="150" width="200"
-                                          alt="Arty Monkeys"></a>
-            </div>
-        </div>
-        <div class="block-header-right top-6">
+<div id="wrapper">
+    <header id="main_header">
+        <figure class="fleft">
+            <img src="images/artyMonkeysLogoCrop.jpg">
+        </figure>
+        <h1 class="pad-4 clr-2 h2header">
+            Arty Monkeys classes for pre-school children encourage active discovery and
+            exploration through themed learning experiences.
+        </h1>
+
+        <section>
             <form action="/emailsender" method="post" class="registerinterestcontainer">
                 <div class="clr-blue">
                     <input class="inputtextboxsmall" placeholder="Enter Your Best Email" type="text" name="email"><br>
@@ -83,79 +67,64 @@
                     <input class="registerinterestbutton" type="submit" value="Register Interest">
                 </div>
             </form>
-        </div>
+        </section>
+    </header>
 
-        <div class="clear"></div>
-        <ul class="menu">
+    <nav id="main_menu">
+        <ul>
             <li class="current"><a href="index.html" class="clr-3">Home</a></li>
             <li><a href="about.html" class="clr-4">About Us</a></li>
             <li><a href="skills.html" class="clr-2">Skills</a></li>
             <li><a href="classes.html" class="clr-5">Classes</a></li>
             <li><a href="contacts.html" class="clr-8">Contact Us</a></li>
         </ul>
-    </header>
-    <!--==============================content================================-->
-    <div class="contentpadding">
-        <section id="content">
-            <div class="clear"></div>
-            <div class="pad-0">
-            </div>
-            <div class="block-header-right top-6">
-                <h2 class="pad-4 clr-2 h2header">
-                    Arty Monkeys classes for pre-school children encourage active discovery and
-                    exploration through themed learning experiences.
-                </h2>
-            </div>
-            <div class="container_12 whitebk">
-                <div class="bot-0 clr-2">
-                    <a href="#" class="link-1 top-3">News</a>
+    </nav>
 
-                    <p><br>Coming soon to Stirling and the surrounding area.</p>
+    <section id="main_section">
 
-                    <p>Register your interest now!</p>
-                    <br>
-                    <a href="#" class="link-1 top-3">What We Do</a>
+        <article id="news_article">
+            <h3>News</h3>
+            <time datetime="2015-04-01" pubdate>posted 2015-04-01</time>
+            <p>Coming soon to Stirling and the surrounding area.</p>
 
-                    <p><br>Our Mission is to create a relaxed and supportive environment which ignites the imagination
-                        and
-                        creativity of young minds.<br><br></p>
+            <p>Register your interest now!</p>
+        </article>
+
+        <article id="what_we_do_article">
+            <h3>What We Do</h3>
+
+            <p>Our Mission is to create a relaxed and supportive environment which ignites the imagination
+                and creativity of young minds.</p>
+
+            <p>Through exploring different materials such as paint, clay,
+                sponges, rollers and textured papers we will help develop your child's cognitive, social and language
+                skills. <br>Our weekly classes are all based on popular stories or nursery rhymes which gives
+                children a context
+                for their ideas and creativity.
+            </p>
+
+        </article>
+        <nav>
+            <div id="slide">
+                <div class="slider">
+                    <ul class="items">
+                        <li><img src="images/slider-1-half.jpg" alt="" height="460" width="215"/></li>
+                        <li><img src="images/slider-2-half.jpg" alt="" height="460" width="215"/></li>
+                        <li><img src="images/slider-3-half.jpg" alt="" height="460" width="215"/></li>
+                    </ul>
                 </div>
-                <div class="grid_7 fleft whitebk">
-                    <nav>
-                        <div id="slide">
-                            <div class="slider">
-                                <ul class="items">
-                                    <li><img src="images/slider-1-half.jpg" alt="" height="460" width="215"/></li>
-                                    <li><img src="images/slider-2-half.jpg" alt="" height="460" width="215"/></li>
-                                    <li><img src="images/slider-3-half.jpg" alt="" height="460" width="215"/></li>
-                                </ul>
-                            </div>
-                            <a href="#" class="prev"></a><a href="#" class="next"></a>
-                        </div>
-                    </nav>
-
-                </div>
-                <div class="grid_12 whitebk">
-                    <p>Through exploring different materials such as paint, clay,
-                        sponges,
-                        rollers and textured papers we will help develop your child's cognitive, social and language
-                        skills. <br>Our weekly classes are all based on popular stories or nursery rhymes which gives
-                        children a context
-                        for their ideas and creativity.
-                    </p>
-
-                </div>
-                <footer class="whitebk">
-                    <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
-                                                            target="_blank"
-                                                            rel="nofollow">www.templatemonster.com</a></p>
-                </footer>
-
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
             </div>
+        </nav>
 
-        </section>
-    </div>
-    <div class="clear"></div>
+    </section>
+    <footer id="main_footer">
+        <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                                target="_blank"
+                                                rel="nofollow">www.templatemonster.com</a></p>
+    </footer>
+
+
 </div>
 </body>
 </html>
