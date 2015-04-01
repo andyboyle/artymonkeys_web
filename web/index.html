@@ -48,39 +48,33 @@
     <![endif]-->
 </head>
 <body>
+<header id="main_header" class="fixed">
+    <figure class="fleft artymonkeyslogo">
+        <img src="images/artyMonkeysLogoCrop.jpg">
+    </figure>
+
+    <nav id="main_menu" class="fleft">
+        <ul>
+            <li class="current"><a href="index.html" class="clr-home">Home</a></li>
+            <li><a href="about.html" class="clr-about">About Us</a></li>
+            <li><a href="skills.html" class="clr-skills">Skills</a></li>
+            <li><a href="classes.html" class="clr-classes">Classes</a></li>
+            <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="clear"></div>
 <div id="wrapper">
-    <header id="main_header">
-        <figure class="fleft">
-            <img src="images/artyMonkeysLogoCrop.jpg">
-        </figure>
-        <h1 class="pad-4 clr-2 h2header">
+    <section id="main_section">
+        <form action="/emailsender" method="post" class="registerinterestcontainer fleft">
+            <input class="inputtextbox" placeholder="Enter Your Best Email" type="email" name="email">
+            <input class="registerinterestbutton" type="submit" value="Register Interest">
+        </form>
+
+        <h1 class="fleft">
             Arty Monkeys classes for pre-school children encourage active discovery and
             exploration through themed learning experiences.
         </h1>
-
-        <section>
-            <form action="/emailsender" method="post" class="registerinterestcontainer">
-                <div class="clr-blue">
-                    <input class="inputtextboxsmall" placeholder="Enter Your Best Email" type="text" name="email"><br>
-                </div>
-                <div>
-                    <input class="registerinterestbutton" type="submit" value="Register Interest">
-                </div>
-            </form>
-        </section>
-    </header>
-
-    <nav id="main_menu">
-        <ul>
-            <li class="current"><a href="index.html" class="clr-3">Home</a></li>
-            <li><a href="about.html" class="clr-4">About Us</a></li>
-            <li><a href="skills.html" class="clr-2">Skills</a></li>
-            <li><a href="classes.html" class="clr-5">Classes</a></li>
-            <li><a href="contacts.html" class="clr-8">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <section id="main_section">
 
         <article id="news_article">
             <h3>News</h3>

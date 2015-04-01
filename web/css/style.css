@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-header, section, footer, aside, nav, article, figcaption, figure {
+header, form, section, footer, aside, nav, article, figcaption, figure {
     display: block;
 }
 
@@ -27,27 +27,47 @@ body {
 
 #wrapper {
     width: 960px;
-    margin: 15px auto;
+    margin: auto;
     text-align: left;
 }
 
 #main_header {
-    background: #FFFBB9;
-    border: 1px solid #999999;
-    padding: 20px;
+    text-align: center;
+    background: white;
+    margin: auto;
 }
 
 #main_menu {
-    background: #CCCCCC;
-    padding: 5px 15px;
+    background: white;
+    padding: 10px 15px;
+    margin: 40px 15px;
+    font-weight: bold;
 }
 
 #main_menu li {
     display: inline-block;
     list-style: none;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: Purisa, "Times New Roman", Times, serif;
     text-transform: uppercase;
+    border: solid cornflowerblue;
+    border-right-color: #0f67a1;
+    border-bottom-color: #0f67a1;
+
+    background: -webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0%, #426d9c),
+    color-stop(40%, #0f67a1),
+    color-stop(100%, #1384d1));
+
+    background: -moz-linear-gradient(top, #426d9c, #0f67a1, #1384d1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 #main_section {
@@ -61,6 +81,10 @@ body {
     text-align: center;
     padding: 20px;
     border-top: 2px solid #999999;
+}
+
+.clear {
+    clear: both;
 }
 
 article {
@@ -99,3 +123,94 @@ h3 {
     font-family: 'Cabin Sketch', serif;
 }
 
+
+.registerinterestcontainer {
+    margin: 35px 10px 20px 10px;
+    padding: 10px 3px 10px 15px;
+    width: 760px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.inputtextbox {
+    float: left;
+    margin: 20px 2px 4px 5px;
+    padding: 9px 5px 6px 5px;
+    color: #140676;
+    font-size: 17px;
+    border: thin #6633dd;
+    background-color: #a8d8d5;
+    border-radius: 8px;
+}
+
+.registerinterestbutton {
+    float: left;
+    margin: 20px 2px 4px 5px;
+    padding: 8px 5px 5px 5px;
+    color: #a8d8d5;
+    font-size: 17px;
+    border: thin #6633dd;
+    background-color: #140676;
+    border-radius: 8px;
+}
+
+.fleft {
+    float: left;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.artymonkeyslogo {
+    padding: 0 50px;
+    margin: 0 20px;
+}
+
+.clr-home {
+    color: red;
+}
+
+.clr-about {
+    color: lawngreen;
+}
+
+.clr-skills {
+    color: yellow;
+}
+
+.clr-classes {
+    color: violet;
+}
+
+.clr-contact {
+    color: orange;
+}
+
+ul.main_menu li:hover a, ul.main_menu li.current a {
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: 0.5s, 0.5s;
+}
+
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link-1:hover {
+    color: #777;
+}
+
+.link-2:hover {
+    color: #b30800;
+}
+
+.link {
+    color: #dd0a00;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
