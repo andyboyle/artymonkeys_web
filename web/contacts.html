@@ -4,12 +4,10 @@
     <title>Contacts</title>
     <meta charset="utf-8">
     <meta name="description" content="Art and Language Classes for children in the Stirling area">
-    <meta name="keywords" content="Art,Arty,Monkey,Kids,Children,Toddler,Classes,Activities,Paint,Language">
+    <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.7.min.js"></script>
@@ -50,75 +48,57 @@
     <![endif]-->
 </head>
 <body>
-<div class="main">
-    <!--==============================header=================================-->
-    <header>
-        <ul class="menu">
-            <li><a href="index.html" class="clr-3">Home</a></li>
-            <li><a href="about.html" class="clr-4">About Us</a></li>
-            <li><a href="skills.html" class="clr-2">Skills</a></li>
-            <li><a href="classes.html" class="clr-5">Classes</a></li>
-            <li class="current"><a href="contacts.html" class="clr-8">Contact Us</a></li>
-        </ul>
-        <div class="fleft clr-blue headerbuffer">
-            <div class="artymonkeyimage">
-                <div>
-                    <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="150" width="205"
-                                              alt="Arty Monkeys"></a>
-                </div>
-                <div class="pablo">
-                    “Every child is an artist”<br>Pablo Picasso
-                </div>
-            </div>
-            <div class="boldy">
-                <br>
+<header id="main_header">
+    <div class="fixedContainer">
+        <figure class="artymonkeyslogo inlineblocked">
+            <img src="images/artyMonkeysLogoCrop.jpg">
+        </figure>
 
-                <h3 class="top-7 clr-4">Contact Us</h3>
-                Send us your details now and<br>we'll let you know about<br>classes coming to you soon.
-                <dl>
-                    <dd class="clr-1"><span>Telephone: </span>07794 190060</dd>
-                </dl>
-                <br>
+        <nav id="main_menu" class="inlineblocked">
+            <ul>
+                <li><a href="index.html" class="clr-home">Home</a></li>
+                <li><a href="about.html" class="clr-about">About Us</a></li>
+                <li><a href="skills.html" class="clr-skills">Skills</a></li>
+                <li><a href="classes.html" class="clr-classes">Classes</a></li>
+                <li class="current"><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="wrapper">
+    <section id="main_section" class="classes_top_margin">
+        <h3>Contact Us</h3>
 
-                <div class="clr-4">We look forward to meeting you<br>and your Arty Monkey soon!</div>
-            </div>
-        </div>
-        <div class="headerbuffer block-1 top-6 fleft">
-            <div class="block-1-shadow formextraheader">
-                <h3 class="clr-4">Contact Form</h3>
+        <p>Send us your details now and we'll let you know about classes coming to you soon.</p>
 
-                <form id="form" action="/emailsender" method="post">
-                    <div class="inputlabel">
-                        <div class="mediumsizebox clr-blue">
-                            <strong>Name:</strong><input class="inputtextboxlarge" type="text" name="name"><br>
-                            <strong>EMail:</strong><input class="inputtextboxlarge" type="text" name="email"><br>
-                            <strong>Phone:</strong><input class="inputtextboxlarge" type="text" name="phone"><br>
-                            <strong>Message:</strong><textarea class="inputtextboxlarge" name="message"></textarea><br>
-                            <input class="registerinterestbutton" type="submit" value="Send">
-                        </div>
+        <dl>
+            <dd><span>Telephone: </span>07794 190060</dd>
+        </dl>
 
-                    </div>
-                </form>
-            </div>
-        </div>
-    </header>
-    <!--==============================content================================-->
-    <section id="content">
+        We look forward to meeting you and your Arty Monkey soon!
 
-        <!--==============================footer=================================-->
-        <footer>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <h3 class="clr-4">Contact Form</h3>
 
-            <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
-                                                    target="_blank"
-                                                    rel="nofollow">www.templatemonster.com</a></p>
-        </footer>
-        <div class="clear"></div>
+        <form id="form" action="/emailsender" method="post">
+            Name:<input class="inputtextbox" type="text" name="name">
+            EMail:<input class="inputtextbox" type="email" name="email">
+            Phone:<input class="inputtextbox" type="tel" name="phone">
+            <strong>Message:</strong><textarea class="inputtextbox" name="message"></textarea>
+            <input class="registerinterestbutton" type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                                target="_blank"
+                                                rel="nofollow">www.templatemonster.com</a></p>
+    </footer>
     </section>
 </div>
 </body>
