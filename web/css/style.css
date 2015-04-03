@@ -9,7 +9,6 @@ section, footer, aside, nav, figcaption, figure {
 
 html, body {
     width: 100%;
-    /*background: url("../images/bg_paint.jpg");*/
     background: darkseagreen;
     text-align: center;
 }
@@ -94,11 +93,11 @@ a:hover {
     background: -webkit-gradient(linear,
     left top,
     left bottom,
-    color-stop(0%, darkseagreen),
-    color-stop(40%, palegreen),
+    color-stop(0%, seagreen),
+    color-stop(40%, darkseagreen),
     color-stop(100%, mediumseagreen));
 
-    background: -moz-linear-gradient(top, darkseagreen, palegreen, mediumseagreen);
+    background: -moz-linear-gradient(top, seagreen, darkseagreen, mediumseagreen);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
