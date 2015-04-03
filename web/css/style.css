@@ -104,7 +104,7 @@ a:hover {
     transform: translate(0, -70px);
 }
 
-ul.menu li:hover a, ul.menu li.current a {
+#main_menu ul.menu #main_menu li:hover #main_menu a #main_menu ul.menu #main_menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
     -webkit-transition-property: color, background;
