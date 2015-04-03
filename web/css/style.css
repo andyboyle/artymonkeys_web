@@ -104,8 +104,15 @@ a:hover {
     transform: translate(0, -70px);
 }
 
-#main_menu ul.menu #main_menu li:hover #main_menu a #main_menu ul.menu #main_menu li.current a {
-    border-bottom: 1px solid currentColor;
+#main_menu li:hover ul li a {
+    text-decoration: none;
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+#main_menu li.current {
+    border-bottom: 3px solid currentColor;
+    margin-bottom: 5px;
     text-decoration: none;
     -webkit-transition-property: color, background;
     -webkit-transition-duration: 0.5s, 0.5s;
