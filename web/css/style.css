@@ -165,6 +165,7 @@ article {
     padding: 10px;
     margin: 5px;
     max-width: 450px;
+    border-radius: 10px;
 }
 
 time {
@@ -198,20 +199,19 @@ h3 {
 
 
 .registerinterestcontainer {
-    margin: 40px 30px 0 20px;
+    background: url("../images/handprints-small.png") no-repeat;
+    margin: 10px 30px 0 20px;
     padding: 10px 10px 10px 0;
     width: auto;
     height: 290px;
-    /*background: #ffffff url("../images/handprints-small.jpg") no-repeat top;*/
 }
 
 .inputtextbox {
     float: left;
-    margin: 160px 20px 0 40px;
+    margin: 180px 20px 10px 40px;
     padding: 9px 5px 6px 5px;
     color: blue;
     font-size: 17px;
-    /*border: solid red;*/
     background-color: orangered;
     border-radius: 8px;
 }
@@ -223,9 +223,9 @@ h3 {
     padding: 8px 20px 5px 20px;
     color: #a8d8d5;
     font-size: 17px;
-    /*border: solid red;*/
     background-color: #140676;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .fleft {
@@ -238,7 +238,7 @@ h3 {
 
 .inlineblocked {
     display: inline-block;
-    text-align: right;
+    text-align: left;
 }
 
 .centered {

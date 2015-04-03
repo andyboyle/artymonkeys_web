@@ -3,12 +3,11 @@
     position: relative;
     overflow: hidden;
     width: 520px;
-    margin: 0 0 0 20px;
+    margin: 35px 0 0 20px;
     z-index: 1;
 }
 
 .slider {
-    padding-top: 35px;
     width: 400px;
     height: 286px;
     position: relative;
@@ -16,6 +15,7 @@
 }
 
 .sliderbk {
+    margin-top: 30px;
     background: url(../images/slider-bg-half.png) 0 0 no-repeat;
 }
 
@@ -29,8 +29,8 @@
 
 .prev {
     position: absolute;
-    top: 121px;
-    left: 25px;
+    top: 70px;
+    left: 5px;
     display: block;
     width: 30px;
     height: 35px;
@@ -44,8 +44,8 @@
 
 .next {
     position: absolute;
-    top: 121px;
-    right: 25px;
+    top: 70px;
+    right: 65px;
     display: block;
     width: 30px;
     height: 35px;
