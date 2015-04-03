@@ -309,6 +309,10 @@ ul.menu li:hover a, ul.menu li.current a {
     padding-top: 70px;
 }
 
+.classes_top_margin {
+    padding-top: 70px;
+}
+
 img {
     margin: 5px 20px 10px 0;
 }

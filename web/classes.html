@@ -4,12 +4,10 @@
     <title>Schedule</title>
     <meta charset="utf-8">
     <meta name="description" content="Art and Language Classes for children in the Stirling area">
-    <meta name="keywords" content="Art,Arty,Monkey,Kids,Children,Toddler,Classes,Activities,Paint,Language">
+    <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.7.min.js"></script>
@@ -51,48 +49,29 @@
 </head>
 <body>
 <div class="main">
-    <!--==============================header=================================-->
-    <header>
-        <ul class="menu">
-            <li><a href="index.html" class="clr-3">Home</a></li>
-            <li><a href="about.html" class="clr-4">About Us</a></li>
-            <li><a href="skills.html" class="clr-2">Skills</a></li>
-            <li class="current"><a href="classes.html" class="clr-5">Classes</a></li>
-            <li><a href="contacts.html" class="clr-8">Contact Us</a></li>
-        </ul>
-        <div class="artymonkeyimage fleft clr-blue headerbuffer pablo">
-            <div>
-                <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="150" width="205"
-                                          alt="Arty Monkeys"></a>
-            </div>
-            “Every child is an artist”<br>Pablo Picasso
-        </div>
-        <div class="block-header-right top-6 fleft">
-            <h2 class="headerbuffer pad-4 clr-2 h2header">
-                Arty Monkeys classes for pre-school children encourage active discovery and
-                exploration through themed learning experiences.
-            </h2>
+    <header id="main_header">
+        <div class="fixedContainer">
+            <figure class="artymonkeyslogo inlineblocked">
+                <img src="images/artyMonkeysLogoCrop.jpg">
+            </figure>
 
-            <form action="/emailsender" method="post" class="registerinterestcontainer">
-                <div class="inputlabel  clr-blue">
-                    Name:<input class="inputtextbox" type="text" name="name"><br>
-                    Email:<input class="inputtextbox" type="text" name="email"><br>
-                    Phone:<input class="inputtextbox" type="text" name="phone"><br>
-                </div>
-                <div>
-                    <input class="registerinterestbutton" type="submit" value="Register Interest">
-                </div>
-            </form>
+            <nav id="main_menu" class="inlineblocked">
+                <ul>
+                    <li><a href="index.html" class="clr-home">Home</a></li>
+                    <li class="current"><a href="about.html" class="clr-about">About Us</a></li>
+                    <li><a href="skills.html" class="clr-skills">Skills</a></li>
+                    <li><a href="classes.html" class="clr-classes">Classes</a></li>
+                    <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!--==============================content================================-->
-    <section id="content">
-        <div class="clear"></div>
-        <div class="pad-4">
-        </div>
-        <div class="container_12">
-            <div class="grid_4 bot-1">
-                <h3 class="top-6 p6 clr-4">Our Venues</h3>
+    <div id="wrapper">
+        <section id="main_section" class="classes_top_margin">
+            <article>
+
+                <h3>Our Venues</h3>
+
                 <p class="p7">We are currently in discussions with various venues.</p>
                 <!--
                 <h3 class="top-4 p6">Briarlands Farm</h3>
@@ -111,35 +90,22 @@
                 <p class="p7">Some things about this venue<br>And for futher info here is <a href="#" class="link">more...</a>
                 </p>
                 -->
-            </div>
-            <div class="grid_8 bot-1 clr-4">
-                    <h3 class="top-6 p6 clr-4">Schedule</h3>
-                    <p class="p7">Under development.</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+            </article>
 
-                </div>
-            </div>
-            <!--==============================footer=================================-->
-            <footer>
-                <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/" target="_blank"
-                                          rel="nofollow">www.templatemonster.com</a></p>
-                <br>
-                <br>
-                <br>
-                <br>
+            <article>
+                <h3 class="top-6 p6 clr-4">Schedule</h3>
 
-            </footer>
-        <div class="clear"></div>
-    </section>
+                <p class="p7">We are currently putting our program of classes together.</p>
+            </article>
+        </section>
+    </div>
 </div>
+
+<footer id="main_footer">
+    <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                            target="_blank"
+                                            rel="nofollow">www.templatemonster.com</a></p>
+</footer>
+
 </body>
 </html>
