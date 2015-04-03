@@ -111,6 +111,7 @@ a:hover {
     padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    border-bottom:1px solid #fff;
 }
 
 #main_menu li a {
