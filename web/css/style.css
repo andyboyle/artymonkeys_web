@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-section, footer, aside, nav, article, figcaption, figure {
+section, footer, aside, nav, figcaption, figure {
     display: block;
 }
 
@@ -138,7 +138,6 @@ form {
     width: 980px;
     margin: auto;
     text-align: left;
-    background: white;
 }
 
 #main_section {
@@ -159,13 +158,12 @@ form {
 }
 
 article {
+    vertical-align: top;
+    display: inline-block;
     background: #FFFBCC;
     padding: 10px;
     margin: 5px;
-}
-
-#news_article {
-    margin-top: 20px;
+    max-width: 450px;
 }
 
 time {
@@ -192,39 +190,39 @@ h2 {
 }
 
 h3 {
-    font-size: large;
-    color: #0072ff;
+    font-size: 30px;
+    color: red;
     font-family: 'Cabin Sketch', serif;
 }
 
 
 .registerinterestcontainer {
-    margin: 50px 30px 50px 10px;
-    padding: 90px 10px 140px 0;
+    margin: 40px 30px 0 20px;
+    padding: 10px 10px 10px 0;
     width: auto;
-    height: 60px;
-    background: #ffffff url("../images/big-red-splat-md.png") no-repeat;
+    height: 290px;
+    background: #ffffff url("../images/handprints-small.jpg") no-repeat top;
 }
 
 .inputtextbox {
     float: left;
-    margin: 3px 0 0 80px;
+    margin: 160px 20px 0 40px;
     padding: 9px 5px 6px 5px;
-    color: #140676;
+    color: blue;
     font-size: 17px;
-    border: solid red;
-    background-color: #a8d8d5;
+    /*border: solid red;*/
+    background-color: orangered;
     border-radius: 8px;
 }
 
 .registerinterestbutton {
     display: block;
     float: none;
-    margin: 10px 0 0 80px;
+    margin: 10px 0 0 40px;
     padding: 8px 20px 5px 20px;
     color: #a8d8d5;
     font-size: 17px;
-    border: solid red;
+    /*border: solid red;*/
     background-color: #140676;
     border-radius: 8px;
 }
@@ -262,7 +260,7 @@ h3 {
     left: 0%;
     top: 0%;
     transform: translate(0%, 0%);
-    box-shadow: 0 3px 0 #deeede;
+    box-shadow: 0 5px 10px #deeede;
     z-index: 10;
 }
 
