@@ -66,26 +66,40 @@
     </div>
 </header>
 <div id="wrapper">
-    <section id="main_section" class="classes_top_margin">
-        <h3>Contact Us</h3>
+    <section id="main_section" class="contacts_top_margin">
 
-        <p>Send us your details now and we'll let you know about classes coming to you soon.</p>
+        <article id="contactus">
+            <h3>Contact Us</h3>
 
-        <dl>
-            <dd><span>Telephone: </span>07794 190060</dd>
-        </dl>
+            <p>Send us your details now and we'll let you know about classes coming to you soon.</p>
 
-        We look forward to meeting you and your Arty Monkey soon!
+            <dl>
+                <dd><span>Telephone: </span>07794 190060</dd>
+            </dl>
 
-        <h3 class="clr-4">Contact Form</h3>
+            We look forward to meeting you and your Arty Monkey soon!
 
-        <form id="form" action="/emailsender" method="post">
-            Name:<input class="inputtextbox" type="text" name="name">
-            EMail:<input class="inputtextbox" type="email" name="email">
-            Phone:<input class="inputtextbox" type="tel" name="phone">
-            <strong>Message:</strong><textarea class="inputtextbox" name="message"></textarea>
-            <input class="registerinterestbutton" type="submit" value="Send">
-        </form>
+        </article>
+
+        <article id="emailus">
+            <h3 class="clr-4">Contact Form</h3>
+            <br>
+            <form id="form" action="/emailsender" method="post">
+                <label>Name:
+                    <input class="inputtextboxmail" type="text" name="name">
+                </label>
+                <label>EMail:
+                    <input class="inputtextboxmail" type="email" name="email">
+                </label>
+                <label>Phone:
+                    <input class="inputtextboxmail" type="tel" name="phone">
+                </label>
+                <label id="emailmessage">Message:
+                    <textarea class="messagetextboxmail" name="message"></textarea>
+                </label>
+                <input class="registerinterestbutton" type="submit" value="Send">
+            </form>
+        </article>
     </section>
     <footer>
         <br>

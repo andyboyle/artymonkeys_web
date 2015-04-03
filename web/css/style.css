@@ -207,15 +207,46 @@ h3 {
     margin: 160px 20px 20px 40px;
     padding: 9px 5px 6px 5px;
     color: blue;
-    font-size: 17px;
+    font-size: 12px;
     background-color: orangered;
     border-radius: 8px;
+}
+
+.inputtextboxmail {
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    padding: 5px;
+    color: blue;
+    font-size: 12px;
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.messagetextboxmail {
+    min-width: 340px;
+    min-height: 400px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    padding: 5px;
+    color: blue;
+    font-size: 15px;
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+#emailmessage {
+    display: block;
+    transform: translate(-20px, -245px);
+    float: right;
 }
 
 .registerinterestbutton {
     display: block;
     float: none;
-    margin: 10px 0 0 40px;
+    margin: 80px 0 0 70px;
     padding: 8px 20px 5px 20px;
     color: #a8d8d5;
     font-size: 17px;
@@ -310,6 +341,10 @@ h3 {
     padding-top: 70px;
 }
 
+.contacts_top_margin {
+    padding-top: 50px;
+}
+
 img {
     margin: 5px 20px 10px 0;
 }
@@ -351,9 +386,18 @@ td {
     padding: 5px 10px 5px 10px;
 }
 
-ul.main_menu ul.main_menu li.current a {
+ul.menu li:hover a, ul.menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
     -webkit-transition-property: color, background;
     -webkit-transition-duration: 0.5s, 0.5s;
+}
+
+#contactus {
+    max-width: 250px;
+}
+
+#emailus {
+    min-width: 650px;
+    max-height: 530px;
 }
