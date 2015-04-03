@@ -149,7 +149,6 @@ form {
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    border-top: 2px solid #999999;
 }
 
 .clear {
@@ -306,6 +305,47 @@ ul.menu li:hover a, ul.menu li.current a {
     padding-top: 30px;
 }
 
+.skills_top_margin {
+    padding-top: 70px;
+}
+
 img {
     margin: 5px 20px 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px seagreen;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 2px 0 2px 30px;
+}
+
+li {
+    margin: 10px 0;
+    font-style: italic;
+    color: lightgoldenrodyellow;
+}
+table, th, td {
+    border: 1px solid #140676;
+}
+
+th {
+    padding: 10px 0;
+    background-color: #140676;
+    color: orange;
+    align-content: center;
+    text-align: center;
+    min-width: 310px;
+}
+
+td {
+    font-weight: bold;
+    background: lightslategrey;
+    color: yellow;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
 }
