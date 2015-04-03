@@ -104,6 +104,13 @@ a:hover {
     transform: translate(0, -70px);
 }
 
+ul.menu li:hover a, ul.menu li.current a {
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: 0.5s, 0.5s;
+}
+
 #main_menu li {
     display: inline-block;
     list-style: none;
@@ -111,7 +118,7 @@ a:hover {
     padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    border-bottom:1px solid #fff;
+    border-bottom: 1px solid currentColor;
 }
 
 #main_menu li a {
@@ -140,7 +147,7 @@ form {
 
 #main_section {
     width: 1000px;
-    margin-top: 140px;
+    margin-top: 130px;
     box-sizing: border-box;
 }
 
@@ -199,10 +206,23 @@ h3 {
     float: left;
     min-width: 370px;
     margin: 0 40px 0 0;
-    padding: 0;
+    padding: 20px 0 0 0;
     width: auto;
-    height: 200px;
-    background: url("../images/paintbrush.png") no-repeat;
+    height: 90px;
+}
+
+.topside {
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.artymonkeys_blurb {
+    margin: 0;
+    padding: 0;
+    color: #1e8ddd;
+    text-shadow: 1px 1px 1px #000;;
+    max-width: 350px;
+    font-size: larger;
 }
 
 #news_article {
@@ -214,11 +234,11 @@ h3 {
 }
 
 .inputemailtextbox {
-    margin: 170px 20px 10px 40px;
+    margin: 5px 20px 10px 40px;
     padding: 9px 5px 6px 5px;
     color: blue;
     font-size: 17px;
-    background-color: orangered;
+    background-color: #daAb00;
     border-radius: 8px;
 }
 
@@ -426,11 +446,4 @@ h3 {
     color: yellow;
     font-size: 15px;
     padding: 5px 10px 5px 10px;
-}
-
-.skills_table ul.menu li:hover a, ul.menu li.current a {
-    border-bottom: 1px solid currentColor;
-    text-decoration: none;
-    -webkit-transition-property: color, background;
-    -webkit-transition-duration: 0.5s, 0.5s;
 }
