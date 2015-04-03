@@ -48,41 +48,56 @@
     <![endif]-->
 </head>
 <body>
-<header id="main_header" class="fixed">
-    <figure class="fleft artymonkeyslogo">
-        <img src="images/artyMonkeysLogoCrop.jpg">
-    </figure>
+<header id="main_header">
+    <div class="fixedContainer">
+        <figure class="artymonkeyslogo inlineblocked">
+            <img src="images/artyMonkeysLogoCrop.jpg">
+        </figure>
 
-    <nav id="main_menu" class="fleft">
-        <ul class="menu">
-            <li class="current"><a href="index.html" class="clr-home">Home</a></li>
-            <li><a href="about.html" class="clr-about">About Us</a></li>
-            <li><a href="skills.html" class="clr-skills">Skills</a></li>
-            <li><a href="classes.html" class="clr-classes">Classes</a></li>
-            <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
-        </ul>
-    </nav>
+        <nav id="main_menu" class="inlineblocked">
+            <ul>
+                <li class="current"><a href="index.html" class="clr-home">Home</a></li>
+                <li><a href="about.html" class="clr-about">About Us</a></li>
+                <li><a href="skills.html" class="clr-skills">Skills</a></li>
+                <li><a href="classes.html" class="clr-classes">Classes</a></li>
+                <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <div class="clear"></div>
 <div id="wrapper">
     <section id="main_section">
-        <form action="/emailsender" method="post" class="registerinterestcontainer fleft">
+
+        <!--<h1>-->
+        <!--Arty Monkeys classes for pre-school children encourage active discovery and-->
+        <!--exploration through themed learning experiences.-->
+        <!--</h1>-->
+
+        <form action="/emailsender" method="post" class="registerinterestcontainer inlineblocked">
             <input class="inputtextbox" placeholder="Enter Your Best Email" type="email" name="email">
             <input class="registerinterestbutton" type="submit" value="Register Interest">
         </form>
 
-        <h1 class="fleft">
-            Arty Monkeys classes for pre-school children encourage active discovery and
-            exploration through themed learning experiences.
-        </h1>
+        <div class="inlineblocked">
+            <nav id="slide" class="slider">
+                <ul class="items">
+                    <li><img src="images/slider-1-half.jpg" alt="" height="460" width="215"/></li>
+                    <li><img src="images/slider-2-half.jpg" alt="" height="460" width="215"/></li>
+                    <li><img src="images/slider-3-half.jpg" alt="" height="460" width="215"/></li>
+                </ul>
+                <a href="#" class="prev"></a><a href="#" class="next"></a>
+            </nav>
 
-        <article id="news_article">
-            <h3>News</h3>
-            <time datetime="2015-04-01" pubdate>posted 2015-04-01</time>
-            <p>Coming soon to Stirling and the surrounding area.</p>
 
-            <p>Register your interest now!</p>
-        </article>
+            <article id="news_article">
+                <h3>News</h3>
+                <time datetime="2015-04-01" pubdate>posted 2015-04-01</time>
+                <p>Coming soon to Stirling and the surrounding area.</p>
+
+                <p>Register your interest now!</p>
+            </article>
+        </div>
 
         <article id="what_we_do_article">
             <h3>What We Do</h3>
@@ -98,19 +113,6 @@
             </p>
 
         </article>
-        <nav>
-            <div id="slide">
-                <div class="slider">
-                    <ul class="items">
-                        <li><img src="images/slider-1-half.jpg" alt="" height="460" width="215"/></li>
-                        <li><img src="images/slider-2-half.jpg" alt="" height="460" width="215"/></li>
-                        <li><img src="images/slider-3-half.jpg" alt="" height="460" width="215"/></li>
-                    </ul>
-                </div>
-                <a href="#" class="prev"></a><a href="#" class="next"></a>
-            </div>
-        </nav>
-
     </section>
     <footer id="main_footer">
         <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
