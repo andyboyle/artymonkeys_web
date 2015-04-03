@@ -139,7 +139,7 @@ form {
 
 #main_section {
     width: 1000px;
-    margin-top: 100px;
+    margin-top: 140px;
     box-sizing: border-box;
 }
 
@@ -197,7 +197,7 @@ h3 {
 .registerinterestcontainer {
     float: left;
     min-width: 370px;
-    margin: 40px 30px 0 0;
+    margin: 0 40px 0 0;
     padding: 0;
     width: auto;
     height: 200px;
@@ -361,19 +361,19 @@ h3 {
 }
 
 .about_us_top_margin {
-    padding-top: 30px;
+    padding-top: 0;
 }
 
 .skills_top_margin {
-    padding-top: 70px;
+    padding-top: 0;
 }
 
 .classes_top_margin {
-    padding-top: 70px;
+    padding-top: 0;
 }
 
 .contacts_top_margin {
-    padding-top: 50px;
+    padding-top: 0;
 }
 
 .aboutsusimg {
