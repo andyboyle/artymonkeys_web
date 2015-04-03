@@ -351,7 +351,7 @@ td {
     padding: 5px 10px 5px 10px;
 }
 
-ul.menu ul.menu li.current a {
+ul.main_menu ul.main_menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
     -webkit-transition-property: color, background;
