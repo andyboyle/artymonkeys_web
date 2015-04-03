@@ -4,19 +4,15 @@
     <title>About</title>
     <meta charset="utf-8">
     <meta name="description" content="Art and Language Classes for children in the Stirling area">
-    <meta name="keywords" content="Art,Arty,Monkey,Kids,Children,Toddler,Classes,Activities,Paint,Language">
+    <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
-
     <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.1.js"></script>
-    <script type="text/javascript" src="nagging-menu.js" charset="utf-8"></script>
     <script>
         $(document).ready(function () {
             $('.slider')._TMS({
@@ -53,120 +49,81 @@
 </head>
 <body>
 <div class="main">
-    <!--==============================header=================================-->
-    <header>
-        <ul class="menu">
-            <li><a href="index.html" class="clr-3">Home</a></li>
-            <li class="current"><a href="about.html" class="clr-4">About Us</a></li>
-            <li><a href="skills.html" class="clr-2">Skills</a></li>
-            <li><a href="classes.html" class="clr-5">Classes</a></li>
-            <li><a href="contacts.html" class="clr-8">Contact Us</a></li>
-        </ul>
-        <div class="artymonkeyimage fleft clr-blue headerbuffer pablo">
-            <div>
-                <a href="index.html"><img src="images/artyMonkeysLogoCrop.jpg" height="150" width="205"
-                                          alt="Arty Monkeys"></a>
-            </div>
-            “Every child is an artist”<br>Pablo Picasso
-        </div>
-        <div class="block-header-right top-6 fleft">
-            <h2 class="headerbuffer pad-4 clr-2 h2header">
-                Arty Monkeys classes for pre-school children encourage active discovery and
-                exploration through themed learning experiences.
-            </h2>
+    <header id="main_header">
+        <div class="fixedContainer">
+            <figure class="artymonkeyslogo inlineblocked">
+                <img src="images/artyMonkeysLogoCrop.jpg">
+            </figure>
 
-            <form action="/emailsender" method="post" class="registerinterestcontainer">
-                <div class="inputlabel clr-blue">
-                    Name:<input class="inputtextbox" type="text" name="name"><br>
-                    Email:<input class="inputtextbox" type="text" name="email"><br>
-                    Phone:<input class="inputtextbox" type="text" name="phone"><br>
-                </div>
-                <div>
-                    <input class="registerinterestbutton" type="submit" value="Register Interest">
-                </div>
-            </form>
+            <nav id="main_menu" class="inlineblocked">
+                <ul>
+                    <li><a href="index.html" class="clr-home">Home</a></li>
+                    <li class="current"><a href="about.html" class="clr-about">About Us</a></li>
+                    <li><a href="skills.html" class="clr-skills">Skills</a></li>
+                    <li><a href="classes.html" class="clr-classes">Classes</a></li>
+                    <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!--==============================content================================-->
-    <section id="content">
-        <div class="clear"></div>
-        <div class="container_12">
-            <div class="grid_6 bot-1">
-                <h3 class="top-6 p2 clr-9">Yvonne</h3>
+    <div id="wrapper">
+        <section id="main_section" class="about_us_top_margin">
+            <article class="clr-yvonne">
+                <h3 class="clr-yvonne">Yvonne</h3>
+                <img class="fleft borderround" src="images/YvonneAndGirlsSmall.JPG" height="155" width="107" alt="Yvonne">
 
-                <div class="pad-about">
+                <p>As a mum and primary teacher I love making learning fun.</p>
 
-                    <img src="images/YvonneAndGirlsSmall.JPG" height="155" width="107" alt="Yvonne"
-                         class="img-border img-indent">
+                <p>I have designed all our Arty Monkeys classes to appeal to young children's
+                    interests whilst allowing them to learn other important life skills for their age.</p>
 
-                    <div class="extra-wrap">
-                        <p class="clr-9">As a mum and primary teacher I love making learning fun.</p>
-                        <br>
-
-                        <p class="clr-9">I have designed all our Arty Monkeys classes to appeal to young children's
-                            interests whilst allowing them to learn other important life skills for their age.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="grid_6 bot-2">
-                <h3 class="top-6 p2 clr-1">Kelley</h3>
-
-                <div class="pad-3 pad-about">
-
-                    <img src="images/kelley.jpg" height="155" width="160" alt="Kelley"
-                         class="img-border img-indent">
-
-                    <div class="extra-wrap">
-                        <p class="clr-1">Ever since I was young I have had an interest and appreciation of things which
-                            were made instead of reproduced or bought off the shelf.</p>
-                        <br>
-
-                        <p class="clr-1">Over the years, especially since having kids, I have </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="clear"></div>
-        <div class="container_12">
-            <div class="grid_6 bot-1 fleft clr-9 pad-about">
-                <p class="clr-9">
+                <p>
                     For me arts and crafts play a huge part of my family life - both my
-                    children love painting, drawing and making things together. A cereal box is never "rubbish" in our
+                    children love painting, drawing and making things together. A cereal box is never "rubbish" in
+                    our
                     house. It's been a television, a spaceship and even part of a bike!</p>
-                <br>
 
-                <p class="clr-9">Children have the most amazing imaginations because they see the world through new
-                    eyes. I set up Arty Monkeys to allow these imaginations to flourish and be celebrated. Having taken
+                <p>Children have the most amazing imaginations because they see the world through new
+                    eyes. I set up Arty Monkeys to allow these imaginations to flourish and be celebrated. Having
+                    taken
                     my own children to various classes over the years I am keen that our classes will be fun for the
                     adults too!</p>
 
-            </div>
 
-            <div class="grid_6 bot-1 pad-about">
-                <p class="clr-1">learned that as well as it
+            </article>
+
+            <article class="clr-kelley">
+                <h3 class="clr-kelley">Kelley</h3>
+
+                <img class="fleft borderround" src="images/kelley.jpg" height="155" width="160" alt="Kelley">
+
+                <p>Ever since I was young I have had an interest and appreciation of things
+                    which
+                    were made instead of reproduced or bought off the shelf.</p>
+
+                <p>Over the years, especially since having kids, I have </p>
+
+                <p>learned that as well as it
                     being rewarding to create something from scratch, it's actually really really fun! It's also
                     a great way of communicating with my kids. There is nothing better than to see the pure
                     excitement in their eyes while they engineer their ideas. The twinkle when you tell them
                     just how good it looks - priceless!</p>
-                <br>
 
-                <p class="clr-1">With a background running a successful business and a bachelors degree in
+                <p>With a background running a successful business and a bachelors degree in
                     English Language and Linguistics, I knew I had to do something with this burning desire to
                     bring the same joy and inspiration into other families through arts and crafts.</p>
 
-            </div>
-        </div>
-        <footer>
-            <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
-                                                    target="_blank"
-                                                    rel="nofollow">www.templatemonster.com</a></p>
-        </footer>
+            </article>
 
-        <div class="clear"></div>
+        </section>
+    </div>
+
 </div>
-</section>
-</div>
+<footer id="main_footer">
+    <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                            target="_blank"
+                                            rel="nofollow">www.templatemonster.com</a></p>
+</footer>
+
 </body>
 </html>

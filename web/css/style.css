@@ -34,7 +34,6 @@ body {
     top: 0;
 }
 
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -172,8 +171,9 @@ time {
 }
 
 p {
-    color: green;
     font-weight: bolder;
+    font-size: 13px;
+    margin: 12px 5px;
 }
 
 h1 {
@@ -195,7 +195,6 @@ h3 {
     color: red;
     font-family: 'Cabin Sketch', serif;
 }
-
 
 .registerinterestcontainer {
     background: url("../images/handprints-small.png") no-repeat;
@@ -284,6 +283,18 @@ h3 {
     color: orange;
 }
 
+.clr-yvonne {
+    color: chocolate;
+}
+
+.clr-kelley {
+    color: blue;
+}
+
+.borderround {
+    border-radius: 10px;
+}
+
 ul.menu li:hover a, ul.menu li.current a {
     border-bottom: 1px solid currentColor;
     text-decoration: none;
@@ -291,4 +302,10 @@ ul.menu li:hover a, ul.menu li.current a {
     -webkit-transition-duration: 0.5s, 0.5s;
 }
 
+.about_us_top_margin {
+    padding-top: 30px;
+}
 
+img {
+    margin: 5px 20px 10px 0;
+}
