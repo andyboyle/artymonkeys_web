@@ -132,14 +132,14 @@ form {
 }
 
 #wrapper {
-    width: 980px;
+    width: 1000px;
     margin: auto;
     text-align: left;
 }
 
 #main_section {
-    width: 980px;
-    margin-top: 120px;
+    width: 1000px;
+    margin-top: 100px;
     box-sizing: border-box;
 }
 
@@ -195,16 +195,47 @@ h3 {
 }
 
 .registerinterestcontainer {
-    margin: 10px 30px 0 0;
-    padding: 10px 45px 10px 0;
+    float: left;
+    min-width: 370px;
+    margin: 40px 30px 0 0;
+    padding: 0;
     width: auto;
-    height: 290px;
+    height: 200px;
     background: url("../images/paintbrush.png") no-repeat;
+}
+
+#news_article {
+    max-width: 300px;
+}
+
+#what_we_do_article {
+    max-width: 600px;
+}
+
+.inputemailtextbox {
+    margin: 170px 20px 10px 40px;
+    padding: 9px 5px 6px 5px;
+    color: blue;
+    font-size: 17px;
+    background-color: orangered;
+    border-radius: 8px;
+}
+
+.registerinterestbutton {
+    display: block;
+    float: none;
+    margin: 5px 20px 20px 40px;
+    padding: 9px 5px 6px 5px;
+    color: #a8d8d5;
+    font-size: 17px;
+    background-color: #140676;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .inputtextbox {
     float: left;
-    margin: 160px 20px 20px 40px;
+    margin: 10px 20px 20px 40px;
     padding: 9px 5px 6px 5px;
     color: blue;
     font-size: 12px;
@@ -243,7 +274,7 @@ h3 {
     float: right;
 }
 
-.registerinterestbutton {
+.sendemailbutton {
     display: block;
     float: none;
     margin: 80px 0 0 70px;
@@ -345,52 +376,8 @@ h3 {
     padding-top: 50px;
 }
 
-img {
+.aboutsusimg {
     margin: 5px 20px 10px 0;
-}
-
-table {
-    border-collapse: collapse;
-    box-shadow: 5px 5px 10px seagreen;
-    border-radius: 10px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 2px 0 2px 30px;
-}
-
-li {
-    margin: 10px 0;
-    font-style: italic;
-    color: lightgoldenrodyellow;
-}
-table, th, td {
-    border: 1px solid #140676;
-}
-
-th {
-    padding: 10px 0;
-    background-color: #140676;
-    color: orange;
-    align-content: center;
-    text-align: center;
-    min-width: 310px;
-}
-
-td {
-    font-weight: bold;
-    background: lightslategrey;
-    color: yellow;
-    font-size: 15px;
-    padding: 5px 10px 5px 10px;
-}
-
-ul.menu li:hover a, ul.menu li.current a {
-    border-bottom: 1px solid currentColor;
-    text-decoration: none;
-    -webkit-transition-property: color, background;
-    -webkit-transition-duration: 0.5s, 0.5s;
 }
 
 #contactus {
@@ -400,4 +387,49 @@ ul.menu li:hover a, ul.menu li.current a {
 #emailus {
     min-width: 650px;
     max-height: 530px;
+}
+
+.skills_table table {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px seagreen;
+    border-radius: 10px;
+}
+
+.skills_table ul {
+    list-style-type: none;
+    margin: 2px 0 2px 30px;
+}
+
+.skills_table li {
+    margin: 10px 0;
+    font-style: italic;
+    color: lightgoldenrodyellow;
+}
+
+.skills_table table, th, td {
+    border: 1px solid #140676;
+}
+
+.skills_table th {
+    padding: 10px 0;
+    background-color: #140676;
+    color: orange;
+    align-content: center;
+    text-align: center;
+    min-width: 310px;
+}
+
+.skills_table td {
+    font-weight: bold;
+    background: lightslategrey;
+    color: yellow;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.skills_table ul.menu li:hover a, ul.menu li.current a {
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: 0.5s, 0.5s;
 }
