@@ -28,6 +28,7 @@ public class EmailSender extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String to = "info@artymonkeys.co.uk";
+//        String to = "andyjcboyle@gmail.com";
         String from = req.getParameter("email");
         String name = req.getParameter("name");
         String phone = req.getParameter("phone");
@@ -47,15 +48,18 @@ public class EmailSender extends HttpServlet {
             message.setFrom(new InternetAddress(username));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setSubject(IsGeneralEnquiry(body) ? "Enquiry To Arty Monkeys" : "Registration");
-            message.setText("Name:\t\t" + name + "\nPhone:\t\t" + phone + "\nEmail:\t\t" + from
-                    + (IsGeneralEnquiry(body) ? "\n\n" + body : ""));
+            message.setText("Name:\t\t" + (name != null ? name : "") +
+                    "\nPhone:\t\t" + (phone != null ? phone : "") +
+                    "\nEmail:\t\t" + (from != null ? from : "") +
+                    (IsGeneralEnquiry(body) ? "\n\n" + body : ""));
             Transport.send(message);
 
             MimeMessage messageResp = new MimeMessage(session);
             messageResp.setFrom(new InternetAddress(username));
             messageResp.addRecipient(Message.RecipientType.TO, new InternetAddress(from));
             messageResp.setSubject(IsGeneralEnquiry(body) ? SUBJECT_ENQUIRY : SUBJECT_REGISTRATION);
-            messageResp.setText("Hi " + name + "\n\n" + (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION) +
+            messageResp.setText("Hi " + (name != null ? name : "") + "\n\n" +
+                    (IsGeneralEnquiry(body) ? BODY_ENQUIRY : BODY_REGISTRATION) +
                     AUTOMATED_MSG);
             Transport.send(messageResp);
             out.println("<script>");
