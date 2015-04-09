@@ -2,20 +2,18 @@
 #slide {
     position: relative;
     overflow: hidden;
-    width: 520px;
-    margin: 35px 0 0 20px;
+    width: 36em;
+    margin: 2.5em 0 0 1.3em;
     z-index: 1;
 }
 
 .slider {
-    width: 400px;
-    height: 286px;
-    position: relative;
+    height: 17em;
     z-index: 1;
 }
 
 .sliderbk {
-    margin-top: 0px;
+    display: inline-block;
     background: url(../images/slider-bg-half.png) 0 0 no-repeat;
 }
 
@@ -61,3 +59,8 @@
     display: none;
 }
 
+@media screen and (max-width: 1100px) {
+    .sliderbk {
+        display: none;
+    }
+}

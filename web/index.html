@@ -6,6 +6,7 @@
     <meta name="description" content="Art and Language Classes for children in the Stirling area">
     <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
@@ -13,6 +14,7 @@
     <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.1.js"></script>
+    <script src="js/menu.js"></script>
     <script>
         $(document).ready(function () {
             $('.slider')._TMS({
@@ -50,11 +52,15 @@
 <body>
 <header id="main_header">
     <div class="fixedContainer">
-        <figure class="artymonkeyslogo inlineblocked">
-            <img id="artymonkeysimage" src="images/artyMonkeysLogoCrop.jpg">
+        <figure>
+            <img id="artymonkeys_logo" src="images/artyMonkeysLogoCrop.jpg">
         </figure>
 
-        <nav id="main_menu" class="inlineblocked">
+        <span class="menu_trigger">
+            <img id="menu_icon" src="images/menuIcon.png">
+        </span>
+
+        <nav id="main_menu">
             <ul>
                 <li class="current"><a href="index.html" class="clr-home">Home</a></li>
                 <li><a href="about.html" class="clr-about">About Us</a></li>
@@ -68,10 +74,9 @@
 <div id="wrapper">
     <section id="main_section">
 
-        <div class="inlineblocked topside">
-            <p class="artymonkeys_blurb"> Arty Monkeys classes for pre-school children encourage active
-                discovery and
-                exploration through themed learning experiences.
+        <div id="blurb_and_email_sender">
+            <p class="artymonkeys_blurb">Arty Monkeys classes for pre-school children encourage active
+                discovery and exploration through themed learning experiences.
             </p>
 
             <form action="/emailsender" method="post" class="registerinterestcontainer">
@@ -80,7 +85,7 @@
             </form>
         </div>
 
-        <div class="inlineblocked sliderbk">
+        <div class="sliderbk">
             <nav id="slide" class="slider">
                 <ul class="items">
                     <li><img src="images/slider-1-half.jpg" alt="" height="460" width="215"/></li>
@@ -106,7 +111,8 @@
                 and creativity of young minds.</p>
 
             <p>Through exploring different materials such as paint, clay,
-                sponges, rollers and textured papers we will help develop your child's cognitive, social and language
+                sponges, rollers and textured papers we will help develop your child's cognitive, social and
+                language
                 skills. <br>Our weekly classes are all based on popular stories or nursery rhymes which gives
                 children a context
                 for their ideas and creativity.
@@ -119,8 +125,6 @@
                                                 target="_blank"
                                                 rel="nofollow">www.templatemonster.com</a></p>
     </footer>
-
-
 </div>
 </body>
 </html>

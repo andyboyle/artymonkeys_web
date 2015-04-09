@@ -1,16 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 * {
     padding: 0;
     margin: 0;
-}
-
-section, footer, aside, nav, figcaption, figure {
-    display: block;
-}
-
-html, body {
-    width: 100%;
-    background: darkseagreen;
-    text-align: center;
 }
 
 @font-face {
@@ -19,9 +17,28 @@ html, body {
     url('../fonts/Purisa.ttf') format('truetype');
 }
 
+.menu_trigger {
+    display: none;
+}
+
+section, footer, aside, nav, figcaption {
+    display: block;
+}
+
+figure {
+    display: inline-block;
+}
+
+html, body {
+    width: 100%;
+    background: darkseagreen;
+    text-align: center;
+}
+
 body {
     text-align: center;
-    font-size: medium;
+    font-size: 0.9em;
+    line-height: 1.5em;
     font-family: Purisa, "Times New Roman", Times, serif;
     color: #bf8b37;
 }
@@ -43,49 +60,14 @@ a:hover {
     text-decoration: none;
 }
 
-.link {
-    color: #dd0a00;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-.link-1 {
-    font-size: 30px;
-    line-height: 36px;
-    color: #dd0a00;
-    font-weight: bold;
-    font-family: 'Cabin Sketch', cursive;
-    letter-spacing: -1px;
-    display: inline-block;
-}
-
-.link-1:hover {
-    color: #777;
-}
-
-.link-2 {
-    font-size: 30px;
-    line-height: 36px;
-    color: #0072ff;
-    font-weight: bold;
-    font-family: 'Cabin Sketch', cursive;
-    letter-spacing: -1px;
-    display: inline-block;
-}
-
-.link-2:hover {
-    color: #b30800;
-}
-
 #main_menu {
-    background: white;
-    padding-bottom: 0;
-    padding-left: 200px;
-    padding-right: 20px;
-    font-weight: bold;
+    padding: 0.1em 0;
+    margin: 4em 0 0 0;
+    vertical-align: top;
 
+    display: inline-block;
+    background: white;
+    font-weight: bold;
     font-family: Purisa, "Times New Roman", Times, serif;
     text-transform: uppercase;
 
@@ -101,36 +83,26 @@ a:hover {
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    transform: translate(0, -70px);
 }
 
-#main_menu li:hover ul.menu li.menu a {
+#main_menu ul.menu li.menu a {
     text-decoration: none;
     border-bottom: none;
-    margin-bottom: 5px;
 }
 
-#main_menu li.current {
-    border-bottom: 3px solid currentColor;
-    margin-bottom: 5px;
-    text-decoration: none;
-    -webkit-transition-property: color, background;
-    -webkit-transition-duration: 0.5s, 0.5s;
+#main_menu li:hover {
+    background-color: seagreen;
 }
 
 #main_menu li {
     display: inline-block;
     list-style: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-bottom: 1px solid currentColor;
+    padding: 0.2em 2em;
 }
 
 #main_menu li a {
-    font-size: 17px;
-    line-height: 35px;
+    font-size: 1.1em;
+    line-height: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px 1px #000;
@@ -147,15 +119,15 @@ form {
 }
 
 #wrapper {
-    width: 1000px;
+    width: 85%;
     margin: auto;
     text-align: left;
 }
 
 #main_section {
-    width: 1000px;
-    margin-top: 130px;
-    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    margin-top: 9em;
 }
 
 #main_footer {
@@ -170,12 +142,13 @@ form {
 }
 
 article {
+    text-align: left;
     vertical-align: top;
     display: inline-block;
     background: #FFFBCC;
-    padding: 10px;
-    margin: 5px;
-    max-width: 450px;
+    padding: 1em;
+    margin: 2em;
+    width: 40%;
     border-radius: 10px;
 }
 
@@ -185,77 +158,74 @@ time {
 
 p {
     font-weight: bolder;
-    font-size: 13px;
-    margin: 12px 5px;
+    font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 h1 {
-    font-size: small;
+    font-size: 1.2em;
     color: red;
     font-weight: bold;
     letter-spacing: -1px;
 }
 
 h2 {
-    font-size: larger;
+    font-size: 1.7em;
     color: #63d;
     font-weight: bold;
     letter-spacing: -1px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 2em;
     color: red;
     font-family: 'Cabin Sketch', serif;
+    margin: 0 0 1em 0;
 }
 
 .registerinterestcontainer {
-    float: left;
-    min-width: 370px;
-    margin: 0 40px 0 0;
-    padding: 20px 0 0 0;
-    width: auto;
-    height: 90px;
-}
-
-.topside {
-    margin-top: 0;
+    text-align: left;
+    display: block;
+    margin: 1em 0 0 0;
     vertical-align: top;
+    max-width: 100%;
 }
 
 .artymonkeys_blurb {
-    margin: 0;
-    padding: 0;
+    display: block;
     color: #1e8ddd;
     text-shadow: 1px 1px 1px #000;;
-    max-width: 350px;
-    font-size: larger;
+    max-width: 100%;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    vertical-align: top;
+    margin: 1em 0 0 0;
 }
 
 #news_article {
-    max-width: 300px;
+    display: inline-block;
+    width: 35%;
 }
 
 #what_we_do_article {
-    max-width: 600px;
+    width: 50%
 }
 
 .inputemailtextbox {
-    margin: 5px 20px 10px 40px;
-    padding: 9px 5px 6px 5px;
+    padding: 0.5em;
+    margin: 0.3em 0;
     color: darkblue;
-    font-size: 17px;
+    font-size: 1.3em;
     background-color: #daAb00;
     border-radius: 8px;
 }
 
 .registerinterestbutton {
     display: block;
-    float: none;
-    margin: 5px 20px 20px 40px;
-    padding: 9px 5px 6px 5px;
+    padding: 0.5em;
+    margin: 0.3em 0;
     color: #a8d8d5;
-    font-size: 17px;
+    font-size: 1.3em;
     background-color: #140676;
     border-radius: 8px;
     cursor: pointer;
@@ -266,7 +236,7 @@ h3 {
     margin: 10px 20px 20px 40px;
     padding: 9px 5px 6px 5px;
     color: blue;
-    font-size: 12px;
+    font-size: 0.9em;
     background-color: orangered;
     border-radius: 8px;
 }
@@ -277,7 +247,7 @@ h3 {
     margin-left: 40px;
     padding: 5px;
     color: blue;
-    font-size: 12px;
+    font-size: 0.9em;
     background-color: lightgray;
     border-radius: 8px;
 }
@@ -291,7 +261,7 @@ h3 {
     margin-left: 40px;
     padding: 5px;
     color: blue;
-    font-size: 15px;
+    font-size: 1.1em;
     background-color: lightgray;
     border-radius: 8px;
 }
@@ -308,7 +278,7 @@ h3 {
     margin: 80px 0 0 70px;
     padding: 8px 20px 5px 20px;
     color: #a8d8d5;
-    font-size: 17px;
+    font-size: 1.5em;
     background-color: #140676;
     border-radius: 8px;
     cursor: pointer;
@@ -322,9 +292,20 @@ h3 {
     float: right;
 }
 
+#artymonkeys_logo {
+    display: inline-block;
+    background: white;
+}
+
+#blurb_and_email_sender {
+    vertical-align: top;
+    display: inline-block;
+    width: 30%;
+    margin: 0 1em 0 0;
+}
+
 .inlineblocked {
     display: inline-block;
-    text-align: left;
 }
 
 .centered {
@@ -335,23 +316,12 @@ h3 {
     position: fixed;
 }
 
-.artymonkeyslogo {
-    padding: 0;
-    margin: 0;
-}
-
-.artymonkeysimage {
-    padding: 0 10px 0 0;
-    margin: 0 15px 0 0;
-}
-
 .fixedContainer {
     width: 100%;
     background-color: white;
     position: fixed;
-    left: 0%;
-    top: 0%;
-    transform: translate(0%, 0%);
+    left: 0;
+    top: 0;
     box-shadow: 0 5px 10px #deeede;
     z-index: 10;
 }
@@ -451,6 +421,281 @@ h3 {
     font-weight: bold;
     background: lightslategrey;
     color: yellow;
-    font-size: 15px;
+    font-size: 1.2em;
     padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    #artymonkeys_logo {
+        display: block;
+        background: white;
+        max-height: 5em;
+    }
+
+    #main_menu {
+        padding: 0.1em 0;
+        margin: 0.1em 0 1em 0;
+
+        display: block;
+        background: white;
+        font-weight: bold;
+        font-family: Purisa, "Times New Roman", Times, serif;
+        text-transform: uppercase;
+
+        background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        color-stop(0%, seagreen),
+        color-stop(40%, darkseagreen),
+        color-stop(100%, mediumseagreen));
+
+        background: -moz-linear-gradient(top, seagreen, darkseagreen, mediumseagreen);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #main_section {
+        margin-top: 7em;
+        width: 100%;
+    }
+
+    #blurb_and_email_sender {
+        vertical-align: top;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .artymonkeys_blurb {
+        display: inline-block;
+        color: #1e8ddd;
+        text-shadow: 1px 1px 1px #000;;
+        max-width: 50%;
+        font-size: 1.3em;
+        line-height: 1.7em;
+        vertical-align: top;
+        margin: 1em 0 0 0;
+    }
+
+    .registerinterestcontainer {
+        text-align: left;
+        display: inline-block;
+        margin-top: 3em;
+        max-width: 50%;
+        font-size: 0.8em;
+        padding: 0.7em;
+
+    }
+
+    article {
+        padding: 0.5em;
+        margin: 1em 0.3em 0 0.3em;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .fixedContainer {
+        position: static;
+    }
+
+    #main_section {
+        margin-top: 0;
+    }
+
+    #main_menu ul.menu li.menu a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    #main_menu li:hover {
+        background-color: seagreen;
+    }
+
+    #main_menu li {
+        display: inline-block;
+        list-style: none;
+        padding: 0.2em 2em;
+        width: 30%;
+    }
+
+    #main_menu li a {
+        font-size: 1.1em;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #000;
+        -webkit-transition-property: color, background;
+        -webkit-transition-duration: 0.5s, 0.5s;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    #artymonkeys_logo {
+        display: block;
+        max-height: 5em;
+    }
+
+    #blurb_and_email_sender {
+        display: block;
+        width: 100%;
+    }
+
+    .registerinterestcontainer {
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    .artymonkeys_blurb {
+        text-align: center;
+        display: inline-block;
+        font-size: 1em;
+        padding-left: 1em;
+    }
+
+    article {
+        padding: 0.5em;
+        margin: 0.3em;
+    }
+
+    #news_article {
+        display: inline-block;
+        width: 40%;
+    }
+
+    #what_we_do_article {
+        display: inline-block;
+        width: 45%
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .menu_trigger {
+        display: block;
+        cursor: pointer;
+        text-align: right;
+    }
+
+    .registerinterestcontainer {
+        margin: 0 auto;
+    }
+
+    #artymonkeys_logo {
+        display: block;
+        max-height: 5em;
+    }
+
+    #wrapper {
+        margin: 0;
+    }
+
+    #main_header {
+        margin: 0;
+        padding: 0;
+        display: block;
+        top: 0;
+        width: 100%;
+    }
+
+    div.nav_expanded {
+        display: block;
+    }
+
+    #main_menu {
+        padding: 0;
+        margin: 0;
+        display: none;
+        font-weight: bold;
+        font-family: Purisa, "Times New Roman", Times, serif;
+        text-transform: uppercase;
+
+        background: -webkit-gradient(linear,
+        left top,
+        left bottom,
+        color-stop(0%, seagreen),
+        color-stop(40%, darkseagreen),
+        color-stop(100%, mediumseagreen));
+        background: -moz-linear-gradient(top, seagreen, darkseagreen, mediumseagreen);
+
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+
+    #main_menu li {
+        padding: 0.2em 0;
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    #main_menu ul li {
+        float: none;
+        border-bottom: 2px solid darkgreen;
+    }
+
+    #main_menu ul li:last-child {
+        float: none;
+        border-bottom: none;
+    }
+
+    p {
+        display: block;
+        width: 100%;
+    }
+
+    #blurb_and_email_sender {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    .artymonkeys_blurb {
+        text-align: center;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.9em;
+        padding: 0.4em;
+    }
+
+    article {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #news_article {
+        display: block;
+        align-self: center;
+        width: 97%;
+        max-width: 97%;
+        margin: 0.7em auto;
+        padding: 0.4em;
+    }
+
+    #what_we_do_article {
+        display: block;
+        width: 97%;
+        max-width: 97%;
+        margin: 0.7em auto;
+        padding: 0.4em;
+    }
+
+
 }
