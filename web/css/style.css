@@ -674,10 +674,10 @@ h3 {
     }
 
     article {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        max-width: 100%;
+        padding: 0.5em;
+        margin: 1em auto;
+        width: 97%;
+        max-width: 97%;
     }
 
     #news_article {
@@ -697,5 +697,95 @@ h3 {
         padding: 0.4em;
     }
 
+    table {
+        margin-top: 2em;
+    }
+
+    .skills_table table {
+        border-collapse: inherit;
+        box-shadow: 0 0 0 seagreen;
+        border-radius: 4px;
+    }
+
+    .skills_table ul {
+        list-style-type: none;
+        margin: 0.1em auto;
+    }
+
+    .skills_table li {
+        margin: 0.3em auto;
+        font-style: italic;
+        color: lightgoldenrodyellow;
+    }
+
+    .skills_table table, th, td {
+        border: 1px solid #140676;
+    }
+
+    .skills_table th {
+        padding: 1em 0;
+        background-color: #140676;
+        color: orange;
+        align-content: center;
+        text-align: center;
+        min-width: 0;
+    }
+
+    .skills_table td {
+        font-weight: bold;
+        background: lightslategrey;
+        color: yellow;
+        font-size: 0.8em;
+        padding: 0.3em 0.6em;
+    }
+
+    #contactus {
+        max-width: 97%;
+    }
+
+    #emailus {
+        min-width: 97%;
+        max-height: 80em;
+    }
+
+    .inputtextboxmail {
+        display: block;
+        margin: 1em auto;
+        padding: 0.5em;
+        color: blue;
+        font-size: 0.9em;
+        background-color: lightgray;
+        border-radius: 4px;
+    }
+
+    .messagetextboxmail {
+        min-width: 90%;
+        min-height: 40em;
+        display: block;
+        margin: 1em auto;
+        padding: 0.5em;
+        color: blue;
+        font-size: 0.9em;
+        background-color: lightgray;
+        border-radius: 4px;
+    }
+
+    #emailmessage {
+        display: block;
+        transform: translate(0,0);
+        float: none;
+    }
+
+    .sendemailbutton {
+        display: block;
+        float: none;
+        margin: 1em auto;
+        padding: 0.5em;
+        color: #a8d8d5;
+        font-size: 1em;
+        background-color: #140676;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
 }

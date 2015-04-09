@@ -6,6 +6,7 @@
     <meta name="description" content="Art and Language Classes for children in the Stirling area">
     <meta name="keywords" content="Art,Monkey,Kids,Toddler,Classes,Paint,Craft,Stirling">
     <meta name="author" content="Andy Boyle">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href='images/monkeyFace.jpg' type='image/x-icon'/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
@@ -13,6 +14,7 @@
     <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.1.js"></script>
+    <script src="js/menu.js"></script>
     <script>
         $(document).ready(function () {
             $('.slider')._TMS({
@@ -48,98 +50,104 @@
     <![endif]-->
 </head>
 <body>
-    <header id="main_header">
-        <div class="fixedContainer">
-            <figure class="artymonkeyslogo inlineblocked">
-                <img src="images/artyMonkeysLogoCrop.jpg">
-            </figure>
+<header id="main_header">
+    <div class="fixedContainer">
+        <figure>
+            <img id="artymonkeys_logo" src="images/artyMonkeysLogoCrop.jpg">
+        </figure>
 
-            <nav id="main_menu" class="inlineblocked">
-                <ul>
-                    <li><a href="index.html" class="clr-home">Home</a></li>
-                    <li><a href="about.html" class="clr-about">About Us</a></li>
-                    <li class="current"><a href="skills.html" class="clr-skills">Skills</a></li>
-                    <li><a href="classes.html" class="clr-classes">Classes</a></li>
-                    <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div id="wrapper">
-        <section id="main_section" class="skills_top_margin">
-            <table class="skills_table">
-                <tr>
-                    <th>Core Skills</th>
-                    <th>How Can Arty Monkeys Help?</th>
-                </tr>
-                <tr>
-                    <td>Cognitive
-                        <ul class="skills_ul">
-                            <li class="skills_li"> Problem solving</li>
-                            <li class="skills_li"> Fine motor skills</li>
-                            <li class="skills_li"> Spatial awareness</li>
-                            <li class="skills_li"> Memory</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="skills_ul">
-                            <li class="skills_li"> Through use of art and craft materials and tools children will develop their
-                                fine motor skills.
-                            </li>
-                            <li class="skills_li"> By choosing suitable tools and materials problem solving skills will be
-                                developed.
-                            </li>
-                            <li class="skills_li"> Children will be discussing stories, rhymes and illustrations from books which
-                                will improve their memory and observation skills.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Language Acquisition
-                        <ul class="skills_ul">
-                            <li class="skills_li">Speech</li>
-                            <li class="skills_li">Communication</li>
-                            <li class="skills_li">Phonological awareness</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Through stories, songs and rhymes to introduce and close each class children
-                                will begin to recognise rhyme and initial sounds. These will be discussed and activities
-                                will be designed around these themes.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Social
-                        <ul>
-                            <li>Self-esteem</li>
-                            <li>Sharing</li>
-                            <li>Respect</li>
-                            <li>Emotional self-regulation</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li> Through following class routines and instructions the children will learn about
-                                successful sharing of equipment and space.
-                            </li>
-                            <li> By regularly sharing their own artwork with the group and celebrating their
-                                masterpieces on our website and Facebook.
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
+        <span class="menu_trigger">
+            <img id="menu_icon" src="images/menuIcon.png">
+        </span>
 
-            </table>
-        </section>
+        <nav id="main_menu" class="inlineblocked">
+            <ul>
+                <li><a href="index.html" class="clr-home">Home</a></li>
+                <li><a href="about.html" class="clr-about">About Us</a></li>
+                <li class="current"><a href="skills.html" class="clr-skills">Skills</a></li>
+                <li><a href="classes.html" class="clr-classes">Classes</a></li>
+                <li><a href="contacts.html" class="clr-contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
-    <footer id="main_footer">
-        <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
-                                                target="_blank"
-                                                rel="nofollow">www.templatemonster.com</a></p>
-    </footer>
+</header>
+<div id="wrapper">
+    <section id="main_section" class="skills_top_margin">
+        <table class="skills_table">
+            <tr>
+                <th>Core Skills</th>
+                <th>How Can Arty Monkeys Help?</th>
+            </tr>
+            <tr>
+                <td>Cognitive
+                    <ul class="skills_ul">
+                        <li class="skills_li"> Problem solving</li>
+                        <li class="skills_li"> Fine motor skills</li>
+                        <li class="skills_li"> Spatial awareness</li>
+                        <li class="skills_li"> Memory</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="skills_ul">
+                        <li class="skills_li"> Through use of art and craft materials and tools children will develop
+                            their
+                            fine motor skills.
+                        </li>
+                        <li class="skills_li"> By choosing suitable tools and materials problem solving skills will be
+                            developed.
+                        </li>
+                        <li class="skills_li"> Children will be discussing stories, rhymes and illustrations from books
+                            which
+                            will improve their memory and observation skills.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Language Acquisition
+                    <ul class="skills_ul">
+                        <li class="skills_li">Speech</li>
+                        <li class="skills_li">Communication</li>
+                        <li class="skills_li">Phonological awareness</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Through stories, songs and rhymes to introduce and close each class children
+                            will begin to recognise rhyme and initial sounds. These will be discussed and activities
+                            will be designed around these themes.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Social
+                    <ul>
+                        <li>Self-esteem</li>
+                        <li>Sharing</li>
+                        <li>Respect</li>
+                        <li>Emotional self-regulation</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li> Through following class routines and instructions the children will learn about
+                            successful sharing of equipment and space.
+                        </li>
+                        <li> By regularly sharing their own artwork with the group and celebrating their
+                            masterpieces on our website and Facebook.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table class="skills_table">
+    </section>
+</div>
+<footer id="main_footer">
+    <p class="clr-0">Website Template by <a class="link clr-0" href="http://www.templatemonster.com/"
+                                            target="_blank"
+                                            rel="nofollow">www.templatemonster.com</a></p>
+</footer>
 </body>
 </html>
