@@ -21,6 +21,10 @@ html {
     display: none;
 }
 
+.home_icon_trigger {
+    display: none;
+}
+
 section, footer, aside, nav, figcaption {
     display: block;
 }
@@ -504,6 +508,7 @@ h3 {
 
     .fixedContainer {
         position: static;
+        vertical-align: bottom;
     }
 
     #main_section {
@@ -585,10 +590,34 @@ h3 {
 
 @media screen and (max-width: 530px) {
 
+    .fixedContainer {
+        vertical-align: text-bottom;
+    }
+
     .menu_trigger {
-        display: block;
+        margin-top: auto;
+        display: inline-block;
         cursor: pointer;
-        text-align: right;
+        float: right;
+
+        position: relative;
+        top: 0;
+        transform: translateY(60%);
+    }
+
+    .home_icon_trigger {
+        margin-top: auto;
+        display: inline-block;
+        cursor: pointer;
+        float: left;
+
+        position: relative;
+        top: 0;
+        transform: translateY(50%);
+    }
+
+    #menu_icon {
+        vertical-align: bottom;
     }
 
     .registerinterestcontainer {
@@ -596,7 +625,7 @@ h3 {
     }
 
     #artymonkeys_logo {
-        display: block;
+        display: inline-block;
         max-height: 5em;
     }
 
