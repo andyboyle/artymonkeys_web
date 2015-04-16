@@ -80,14 +80,23 @@
     <section id="main_section">
 
         <div id="blurb_and_email_sender">
-            <p class="artymonkeys_blurb">Arty Monkeys classes for pre-school children encourage active
-                discovery and exploration through themed learning experiences.
-            </p>
+            <p class="artymonkeys_blurb">Arty Monkeys classes for pre-school children encouraging active discovery and
+                exploration through themed learning
+                experiences. </p>
 
             <form action="/emailsender" method="post" class="registerinterestcontainer">
-                <input class="inputemailtextbox" placeholder="Enter Your Best Email" type="email" name="email">
-                <input class="registerinterestbutton" type="submit" value="Register Interest">
+                <div class="inlineblocked">
+                    <input class="inputemailtextbox_first" placeholder="Your Name" type="text" name="name">
+                    <input class="inputemailtextbox" placeholder="Best Phone Number" type="tel" name="phone">
+                    <input class="inputemailtextbox_last" placeholder="Enter Your Best Email" type="email" name="email">
+                </div>
+                <div class="inlineblocked">
+                    <input class="registerinterestbutton" type="submit" value="Register Interest">
+                </div>
             </form>
+
+            <a href="https://www.facebook.com/artymonkeys.uk"><img id="facebook_icon" src="images/facebook.jpg"/></a>
+            <a href="https://twitter.com/arty_monkeys"><img id="twitter_icon" src="images/twitter.png"/></a>
         </div>
 
         <div class="sliderbk">
@@ -100,6 +109,7 @@
                 <a href="#" class="prev"></a><a href="#" class="next"></a>
             </nav>
         </div>
+
 
         <article id="news_article">
             <h3>News</h3>

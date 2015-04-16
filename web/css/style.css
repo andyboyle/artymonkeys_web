@@ -1,9 +1,35 @@
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: darkblue;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: darkblue;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: darkblue;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: darkblue;
+}
+
 html {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+    -moz-box-sizing: border-box; /* Firefox 1 - 28 */
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+    -moz-box-sizing: border-box; /* Firefox 1 - 28 */
 }
 
 * {
@@ -123,7 +149,7 @@ form {
 }
 
 #wrapper {
-    width: 85%;
+    width: 100%; /* Wdith was changed here to 85% */
     margin: auto;
     text-align: left;
 }
@@ -166,6 +192,10 @@ p {
     line-height: 1.5em;
 }
 
+dl {
+    color: blue;
+}
+
 h1 {
     font-size: 1.2em;
     color: red;
@@ -188,22 +218,31 @@ h3 {
 }
 
 .registerinterestcontainer {
-    text-align: left;
     display: block;
-    margin: 1em 0 0 0;
-    vertical-align: top;
-    max-width: 100%;
+    margin: 2em 0.5em;
 }
 
 .artymonkeys_blurb {
     display: block;
-    color: #1e8ddd;
-    text-shadow: 1px 1px 1px #000;;
-    max-width: 100%;
-    font-size: 1.3em;
-    line-height: 1.7em;
+    color: #3e0ded;
+    text-shadow: 1px 1px 1px #e78787;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.8em;
     vertical-align: top;
-    margin: 1em 0 0 0;
+    margin: 0 2em;
+}
+
+.artymonkeys_blurb_sub {
+    display: block;
+    color: #3e0ded;
+    text-shadow: 1px 1px 1px #e78787;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.2em;
+    vertical-align: top;
+    margin-bottom: 1em;
 }
 
 #news_article {
@@ -215,24 +254,57 @@ h3 {
     width: 50%
 }
 
+.inputemailtextbox_first {
+    display: block;
+    padding: 0.2em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+    color: darkblue;
+    font-size: 1em;
+    background-color: #daAb00;
+    border-radius: 8px;
+}
+
 .inputemailtextbox {
-    padding: 0.5em;
+    display: block;
+    padding: 0.2em;
     margin: 0.3em 0;
     color: darkblue;
-    font-size: 1.3em;
+    font-size: 1em;
+    background-color: #daAb00;
+    border-radius: 8px;
+}
+
+.inputemailtextbox_last {
+    display: block;
+    padding: 0.2em;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+    color: darkblue;
+    font-size: 1em;
     background-color: #daAb00;
     border-radius: 8px;
 }
 
 .registerinterestbutton {
-    display: block;
-    padding: 0.5em;
-    margin: 0.3em 0;
+    vertical-align: bottom;
+    padding: 1em;
+    margin: 0 0 0 1.3em;
     color: #a8d8d5;
     font-size: 1.3em;
     background-color: #140676;
     border-radius: 8px;
     cursor: pointer;
+    -moz-transform: translate(0, -20px);
+    -webkit-transform: translate(0, -8px);
+}
+
+#facebook_icon {
+    margin-left: 0.2em;
+}
+
+#twitter_icon {
+    margin-left: 3em;
 }
 
 .inputtextbox {
@@ -304,8 +376,8 @@ h3 {
 #blurb_and_email_sender {
     vertical-align: top;
     display: inline-block;
-    width: 30%;
-    margin: 0 1em 0 0;
+    width: 50%;
+    margin: 0.5em 0 0 0;
 }
 
 .inlineblocked {
@@ -383,6 +455,7 @@ h3 {
 }
 
 #contactus {
+
     max-width: 250px;
 }
 
@@ -801,7 +874,7 @@ h3 {
 
     #emailmessage {
         display: block;
-        transform: translate(0,0);
+        transform: translate(0, 0);
         float: none;
     }
 

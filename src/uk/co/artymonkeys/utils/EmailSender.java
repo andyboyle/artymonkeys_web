@@ -27,8 +27,8 @@ public class EmailSender extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String to = "info@artymonkeys.co.uk";
-//        String to = "andyjcboyle@gmail.com";
+//        String to = "info@artymonkeys.co.uk";
+        String to = "andyjcboyle@gmail.com";
         String from = req.getParameter("email");
         String name = req.getParameter("name");
         String phone = req.getParameter("phone");
