@@ -149,10 +149,17 @@ form {
 }
 
 #wrapper {
-    width: 100%; /* Wdith was changed here to 85% */
+    width: 100%;
     margin: auto;
     text-align: left;
 }
+
+#wrapper_skills {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
 
 #main_section {
     text-align: center;
@@ -492,13 +499,15 @@ h3 {
     align-content: center;
     text-align: center;
     min-width: 310px;
+    font-size: 1.3em;
 }
 
 .skills_table td {
+    text-align: left;
     font-weight: bold;
     background: lightslategrey;
     color: yellow;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 5px 10px 5px 10px;
 }
 
